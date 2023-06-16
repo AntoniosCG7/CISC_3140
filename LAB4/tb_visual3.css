@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Review Assignment
+   
+   Design Style Sheet for Tree and Book Family Home Page
+   Author: Antonios Chatzinikolas Georgas
+   Date:   6/16/2023 
+   
+   Filename: tb_visual3.css
+
+*/
+
+/* HTML Styles */
+html {
+  background-image: url("tb_back5.png");
+}
+/* Page Body Styles */
+
+body {
+  border-left: 3px solid rgb(169, 130, 88);
+  border-right: 3px solid rgb(169, 130, 88);
+  box-shadow: 25px 0 35px rgb(53, 21, 0), -25px 0 35px rgb(53, 21, 0);
+}
+
+/* Main Styles */
+
+main {
+  background-image: url("tb_back7.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: padding-box;
+  box-shadow: inset -10px -10px 25px rgb(71, 71, 71),
+    inset 10px 10px 25px rgb(71, 71, 71);
+}
+
+main header h1 {
+  text-shadow: 1px 1px 0 rgb(221, 221, 221), 5px 5px 20px rgba(41, 41, 41, 0.9);
+}
+
+/* Figure Box Styles */
+
+figure {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+figure img {
+  border-width: 25px;
+  border-style: solid;
+  border-image-source: url("tb_frame.png");
+  border-image-slice: 60 fill;
+  display: block;
+  width: 100%;
+  -webkit-filter: sepia(80%);
+  filter: sepia(80%);
+}
+
+figure figcaption {
+  font-family: "Palatino Linotype", "Palatino", "Times New Roman", serif;
+  font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+/* Article Styles */
+
+article {
+  background-image: url("tb_back6.png");
+  background-position: bottom right;
+  background-size: 15%;
+  background-repeat: no-repeat;
+  border-right: 8px double rgb(147, 116, 68);
+  border-bottom: 8px double rgb(147, 116, 68);
+  border-bottom-right-radius: 80px;
+  box-shadow: inset -10px -10px 25px rgba(184, 154, 112, 0.7);
+}
+
+/* Footer Styles */
+
+footer {
+  background-image: linear-gradient(
+    325deg,
+    rgb(180, 148, 104) 20%,
+    rgb(40, 33, 23) 60%
+  );
+}
