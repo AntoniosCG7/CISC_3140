@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+
+:root {
+  --clr-bg: #fff;
+  --clr-header-footer-bg: #222121;
+  --clr-header-footer-text: #ffffffe0;
+  --clr-title-text: #fff;
+  --clr-menu-text: #fff;
+  --clr-menu-text-hover: #5ccbd0;
+  --clr-footer-items: #ffffff9f;
+  --clr-home-video-text: #fdfdfdef;
+}
+
+/* Default styles */
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: "Caprasimo", cursive;
+  font-size: 0.7rem;
+  font-weight: 450;
+  background-color: var(--clr-bg);
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#main-container {
+  margin: 0px auto;
+  min-height: 100%;
+  max-width: 80rem;
+  min-width: 15rem;
+}
+
+/* Main Styles */
+
+#main-container {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+/* Video Styles */
+
+#home-video-container {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+
+video {
+  height: 88%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(75%);
+}
+
+#home-video-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+#home-video-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.4rem;
+}
+
+#home-video-text p {
+  font-size: 2rem;
+  margin-bottom: 2.8rem;
+}
+
+#explore-button {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 0.7rem 1rem;
+  border: 3px solid #fff;
+  transition: all 0.3s ease;
+}
+
+#explore-button:hover {
+  border-radius: 2.5rem;
+}
