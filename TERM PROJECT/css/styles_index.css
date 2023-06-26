@@ -183,13 +183,7 @@ video {
   margin-bottom: 2rem;
 }
 
-#about-image1 {
-  width: 600px;
-  height: 400px;
-  margin-bottom: 2rem;
-  border-radius: 0.7rem;
-}
-
+#about-image1,
 #about-image2 {
   width: 600px;
   height: 400px;
@@ -268,4 +262,35 @@ video {
 
 #newsletter button[type="submit"]:hover {
   background-color: var(--clr-menu-text-hover);
+}
+
+@media only screen and (max-width: 1285px) and (min-width: 1185px) {
+  #welcome-about-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  #about-image1,
+  #about-image2 {
+    width: 550px;
+    height: 400px;
+  }
+
+  #related-links h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  #related-links ul li {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1285px) {
+  #about-image1,
+  #about-image2 {
+    width: 500px;
+    height: 400px;
+  }
 }
