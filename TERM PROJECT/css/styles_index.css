@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
 
 :root {
   --clr-bg: #fff;
@@ -22,7 +23,7 @@
 html {
   font-family: "Caprasimo", cursive;
   font-size: 0.7rem;
-  font-weight: 450;
+  font-weight: 400;
   background-color: var(--clr-bg);
   height: 100%;
 }
@@ -33,10 +34,23 @@ body {
   min-height: 100%;
 }
 
+hr {
+  border: 3px solid #000000;
+  margin-top: 1rem;
+}
+
+main p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  font-size: 1.4rem;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
 #main-container {
   margin: 0px auto;
   min-height: 100%;
-  max-width: 80rem;
+  max-width: 100%;
   min-width: 15rem;
 }
 
@@ -53,6 +67,7 @@ body {
   height: 80vh;
   width: 100%;
   position: relative;
+  margin-bottom: -10rem;
 }
 
 video {
@@ -72,12 +87,12 @@ video {
 }
 
 #home-video-text h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin-bottom: 1.4rem;
 }
 
 #home-video-text p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 2.8rem;
 }
 
@@ -94,4 +109,163 @@ video {
 
 #explore-button:hover {
   border-radius: 2.5rem;
+}
+
+/* Quick-Info Styles */
+
+#quick-information-about-me {
+  width: 80rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+#quick-information-about-me #information-1 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#quick-information-about-me #information-2 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#quick-information-about-me #information-3 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#quick-information-about-me #information-1 p {
+  font-size: 1.5rem;
+}
+
+#quick-information-about-me #information-2 p {
+  font-size: 1.5rem;
+}
+
+#quick-information-about-me #information-3 p {
+  font-size: 1.5rem;
+}
+
+#quick-information-about-me h2 {
+  text-align: center;
+}
+
+/* welcome-about Styles */
+
+#welcome-about-container {
+  background-color: #eff1f2;
+  border-top: 4px solid var(--clr-header-footer-bg);
+  border-bottom: 4px solid var(--clr-header-footer-bg);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#welcome-about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#welcome-about-content {
+  flex: 1; /* Occupy remaining space */
+  max-width: 70%;
+  margin-right: 4rem;
+}
+
+#welcome-about-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+#about-image1 {
+  width: 600px;
+  height: 400px;
+  margin-bottom: 2rem;
+  border-radius: 0.7rem;
+}
+
+#about-image2 {
+  width: 600px;
+  height: 400px;
+  margin-bottom: 2rem;
+  border-radius: 0.7rem;
+}
+
+#related-links {
+  flex: 0 0 30%;
+}
+
+#related-links h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+#related-links ul li {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-bottom: 1.4rem;
+}
+
+#related-links ul li a {
+  color: #000000;
+  transition: all 0.2s ease;
+}
+
+#related-links ul li a:hover {
+  color: var(--clr-menu-text-hover);
+  padding-left: 10px;
+}
+
+/* Newsletter Styles */
+
+#newsletter {
+  background-color: #eff1f2;
+  padding: 5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 10rem;
+  margin-bottom: -4rem;
+}
+
+#newsletter h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#newsletter p {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+#newsletter input[type="email"] {
+  width: 25rem;
+  padding: 1.2rem 1rem;
+  margin-right: 0.5rem;
+  font-family: "Philosopher", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid #ccc;
+}
+
+#newsletter button[type="submit"] {
+  width: 8rem;
+  padding: 1.2rem 1rem;
+  font-family: "Philosopher", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000000;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#newsletter button[type="submit"]:hover {
+  background-color: var(--clr-menu-text-hover);
 }
