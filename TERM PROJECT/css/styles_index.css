@@ -185,10 +185,10 @@ video {
 
 #about-image1,
 #about-image2 {
-  width: 425px;
-  height: 290px;
+  width: 280px;
+  height: 250px;
   margin-bottom: 2rem;
-  border-radius: 0.7rem;
+  border-radius: 1rem;
 }
 
 #related-links {
@@ -252,8 +252,8 @@ video {
 }
 
 #popular-blog-posts .box img {
-  width: 350px;
-  height: 350px;
+  width: 260px;
+  height: 260px;
   margin-top: 3rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
@@ -282,7 +282,7 @@ video {
   text-align: center;
   letter-spacing: 1px;
   margin-bottom: -4rem;
-  border: 3px solid black;
+  border-top: 3px solid var(--clr-header-footer-bg);
 }
 
 #newsletter h3 {
