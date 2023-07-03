@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <!--
       New Perspectives on HTML5 and CSS3, 7th Edition
@@ -13,7 +14,7 @@
       Filename:   rb_survey.html
 
    -->
-   
+
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <title>Red Ball Survey</title>
@@ -40,63 +41,64 @@
    </header>
    <section>
       <h1>Customer Survey</h1>
-      <p>Thank you for taking our customer survey. Your response 
-         helps Red Ball Pizza maintain the tradition that has made 
+      <p>Thank you for taking our customer survey. Your response
+         helps Red Ball Pizza maintain the tradition that has made
          us the top-rated pizzeria in the metro area.
          All participants are automatically entered into a monthly
-         drawing to receive a <em>Red Ball Express PizzaFest</em> containing 
-         two large pizzas, a 2-liter soda, and a side 
-         order of chicken wings. Check your e-mail inbox for 
+         drawing to receive a <em>Red Ball Express PizzaFest</em> containing
+         two large pizzas, a 2-liter soda, and a side
+         order of chicken wings. Check your e-mail inbox for
          contest results. </p>
-      <p>Surveys are private and confidential. Red Ball 
-         Pizza will not share your contact information with third 
+      <p>Surveys are private and confidential. Red Ball
+         Pizza will not share your contact information with third
          parties, <em>ever</em>. </p>
       <p>Required values are marked by an asterisk (*)</p>
 
       <form id="survey" action="http://www.example.com/redball/survey" method="post">
-         
+
          <fieldset id="custInfo">
             <legend>Customer Information</legend>
             <div class="formRow">
-             <label for="name"> Name * </label>
-             <input name="custName" id="name" type="text" placeholder="First and Last" required/>
+               <label for="name"> Name * </label>
+               <input name="custName" id="name" type="text" placeholder="First and Last" required />
             </div>
 
             <div class="formRow">
-            <label for="street"> Street </label>
-             <input name="custStreet" id="street" type="text"/>
+               <label for="street"> Street </label>
+               <input name="custStreet" id="street" type="text" />
             </div>
 
             <div class="formRow">
-            <label for="city"> City </label>
-             <input name="custCity" id="city" type="text" value="Brooklyn"/>
+               <label for="city"> City </label>
+               <input name="custCity" id="city" type="text" value="Brooklyn" />
             </div>
 
             <div class="formRow">
-            <label for="state"> State </label>
-            <input name="custState" id="state" type="text" value="NY"/>
+               <label for="state"> State </label>
+               <input name="custState" id="state" type="text" value="NY" />
             </div>
 
             <div class="formRow">
-            <label for="zip"> ZipCode </label>
-            <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(-\d{4})?$)" required/>
+               <label for="zip"> ZipCode </label>
+               <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(-\d{4})?$)"
+                  required />
             </div>
 
             <div class="formRow">
-            <label for="phone"> Phone Number </label>
-            <input name="custPhone" id="phone" type="tel" placeholder="nnnnnnnnnn" pattern="^\d{10}$" />
+               <label for="phone"> Phone Number </label>
+               <input name="custPhone" id="phone" type="tel" placeholder="nnnnnnnnnn" pattern="^\d{10}$" />
             </div>
 
             <div class="formRow">
-            <label for="email"> Email </label>
-             <input name="custEmail" id="email" type="email"/>
+               <label for="email"> Email </label>
+               <input name="custEmail" id="email" type="email" />
             </div>
 
             <div class="formRow">
-               <label for="info"> Where did you hear us? <br/> (Select all that applies)</label>
+               <label for="info"> Where did you hear us? <br /> (Select all that applies)</label>
 
                <select name="infoSrc" id="info" size="5" multiple>
-                  
+
                   <option value="internet"> Internet </option>
                   <option value="mag"> Magazine </option>
                   <option value="news"> Newspaper </option>
@@ -108,13 +110,13 @@
 
             <div class="formRow">
                <label for="dish"> What's your favorite?</label>
-               <input name="favDish" id="dish" type="text" list="dishType"/>
+               <input name="favDish" id="dish" type="text" list="dishType" />
                <datalist id="dishType">
-                  <option value="AnitPasto Pizza"/>
-                  <option value="Big Kahuna Pizza"/>
-                  <option value="BBQ Chicken Pizza"/>
-                  <option value="Mediterranean Herb Pizza"/>
-                  <option value="Pasta Rolls"/>
+                  <option value="AnitPasto Pizza" />
+                  <option value="Big Kahuna Pizza" />
+                  <option value="BBQ Chicken Pizza" />
+                  <option value="Mediterranean Herb Pizza" />
+                  <option value="Pasta Rolls" />
                </datalist>
             </div>
 
@@ -124,7 +126,7 @@
                <input type="number" name="dineOut" id="dineSpin" value="1" step="1" min="0" max="20" />
             </div>
 
-            <input name="mailMe" id="mailCB" value="yes" type="checkbox"/>
+            <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
             <label for="mailCB"> Add me to your mailing list</label>
 
          </fieldset>
@@ -135,53 +137,53 @@
 
 
             <div class="formRow">
-             <label for="visit"> Date of visit</label>
-             <input type="date" name="visitDate" id="visit"/>
+               <label for="visit"> Date of visit</label>
+               <input type="date" name="visitDate" id="visit" />
             </div>
 
-           <div class="formRow">
-             <label for="order"> Order Type</label>
-             <select name="orderType" id="order">
-               <option value="order1"> Carry Out</option>
-               <option value="order2"> Delivery</option>
-               <option value="order3" selected> Dine in</option>
-               <option value="order4"> Take 'n bake</option>
-            </select>
+            <div class="formRow">
+               <label for="order"> Order Type</label>
+               <select name="orderType" id="order">
+                  <option value="order1"> Carry Out</option>
+                  <option value="order2"> Delivery</option>
+                  <option value="order3" selected> Dine in</option>
+                  <option value="order4"> Take 'n bake</option>
+               </select>
             </div>
 
-           <div class="formRow">
-            <label > Was your  server friendly? </label>
-            <fieldset class="optGroup">
-               <label for="fYes"> Yes </label>
-               <input name="sFriend" id="fYes" value="yes" type="radio"/>
-               <label for="fNo"> No </label>
-               <input name="sFriend" id="fNo" value="no" type="radio"/>
-            </fieldset>
+            <div class="formRow">
+               <label> Was your server friendly? </label>
+               <fieldset class="optGroup">
+                  <label for="fYes"> Yes </label>
+                  <input name="sFriend" id="fYes" value="yes" type="radio" />
+                  <label for="fNo"> No </label>
+                  <input name="sFriend" id="fNo" value="no" type="radio" />
+               </fieldset>
             </div>
 
 
             <div class="formRow">
-            <label > Was your order correct? </label>
-            <fieldset class="optGroup">
-               <label for="cYes"> Yes </label>
-               <input name="oCorrect" id="cYes" value="yes" type="radio"/>
-               <label for="cNo"> No </label>
-               <input name="oCorrect" id="cNo" value="no" type="radio"/>
-            </fieldset>
+               <label> Was your order correct? </label>
+               <fieldset class="optGroup">
+                  <label for="cYes"> Yes </label>
+                  <input name="oCorrect" id="cYes" value="yes" type="radio" />
+                  <label for="cNo"> No </label>
+                  <input name="oCorrect" id="cNo" value="no" type="radio" />
+               </fieldset>
             </div>
 
             <div class="formRow">
-            <label > Was your food hot? </label>
-            <fieldset class="optGroup">
-               <label for="hYes"> Yes </label>
-               <input name="foodHot" id="hYes" value="yes" type="radio"/>
-               <label for="hNo"> No </label>
-               <input name="foodHot" id="hNo" value="no" type="radio"/>
-            </fieldset>
+               <label> Was your food hot? </label>
+               <fieldset class="optGroup">
+                  <label for="hYes"> Yes </label>
+                  <input name="foodHot" id="hYes" value="yes" type="radio" />
+                  <label for="hNo"> No </label>
+                  <input name="foodHot" id="hNo" value="no" type="radio" />
+               </fieldset>
             </div>
 
             <div class="formRow">
-               <label for="rangeBox"> Rate the service <br/> (0=poor; 10=great) </label>
+               <label for="rangeBox"> Rate the service <br /> (0=poor; 10=great) </label>
                <input type="range" name="serviceRate" id="rangeBox" value="5" step="1" min="0" max="10">
 
             </div>
@@ -193,15 +195,16 @@
          </fieldset>
 
          <div id="buttons">
-         <input type="submit" value="Submit My Survey"/>
-         <input type="reset" value="Cancel"/>
+            <input type="submit" value="Submit My Survey" />
+            <input type="reset" value="Cancel" />
          </div>
 
       </form>
    </section>
    <footer>
       <h1>ORDER</h1>
-      <a href="#">Specials</a> <a href="#">Pizza</a> <a href="#">Pasta</a> <a href="#">Wings</a> <a href="#">Sides</a> <a href="#">Salads</a> <a href="#">Drinks</a> <a href="#">Desserts</a>
+      <a href="#">Specials</a> <a href="#">Pizza</a> <a href="#">Pasta</a> <a href="#">Wings</a> <a href="#">Sides</a>
+      <a href="#">Salads</a> <a href="#">Drinks</a> <a href="#">Desserts</a>
       <h1>ABOUT US</h1>
       <a href="#">Our Story</a> <a href="#">Blog</a> <a href="#">Catering</a> <a href="#">School Lunches</a>
       <h1>CUSTOMER SERVICE</h1>
@@ -213,13 +216,14 @@
       <h1>POLICIES</h1>
       <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
       <address>
-      Red Ball Pizza <br />
-      811 Beach Drive <br />
-      Ormond Beach, FL  32175 <br />
-      (386) 555 - 7499
+         Red Ball Pizza <br />
+         811 Beach Drive <br />
+         Ormond Beach, FL 32175 <br />
+         (386) 555 - 7499
       </address>
    </footer>
 
    <script src="rb_formsubmit.js"></script>
 </body>
+
 </html>
