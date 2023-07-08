@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+
+:root {
+  --clr-bg: #fff;
+  --clr-header-footer-bg: #222121;
+  --clr-header-footer-text: #ffffffe0;
+  --clr-title-text: #fff;
+  --clr-menu-text: #fff;
+  --clr-menu-text-hover: #5ccbd0;
+  --clr-footer-items: #ffffff9f;
+  --clr-home-video-text: #fdfdfdef;
+  --clr-newsletter-bg: #eff1f2;
+}
+
+/* main-container styles */
+
+#main-container {
+  padding-top: 3rem;
+}
+
+#main-container h1 {
+  margin-bottom: 2rem;
+}
+
+/* login form styles */
+
+.login-form {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  background-color: #ffffff;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form button {
+  font-family: "Oswald", sans-serif;
+  margin: 1rem;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  border: 2px solid #ccc;
+  /* border-radius: 0.5rem; */
+}
+
+.login-form button {
+  color: #fff;
+  background-color: var(--clr-header-footer-bg);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* border-radius: 0.5rem; */
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: var(--clr-menu-text-hover);
+}
+
+/* product icons section styles */
+
+#productIcons-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+#productIcons-container img {
+  width: 200px;
+  height: 200px;
+}
+
+#productIcons-container img.rating {
+  width: 70px;
+  height: 70px;
+}
+
+.image-container {
+  max-width: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 8px 8px 6px var(--clr-header-footer-bg);
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.05);
+}
+
+.product-link img {
+  width: 100px;
+  height: 100px;
+}
+
+.product-title {
+  font-family: "Caprasimo", cursive;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* product container styles */
+
+.product {
+  padding: 1rem;
+}
+
+/* product-description styles */
+
+.product-description {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+/* left-column styles */
+
+.left-column {
+  flex-basis: 30%;
+}
+
+.product-title,
+.product-maker,
+.product-description-image-container a,
+.customer-rating {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: start;
+}
+
+.product-maker {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.customer-rating {
+  font-size: 1.2rem;
+}
+
+.rating-img {
+  width: 50px;
+  height: 50px;
+  padding-top: 2rem;
+}
+
+.product-description-image-container {
+  border: 3px solid black;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.product-description-image {
+  width: 400px;
+  height: 400px;
+}
+
+/* right-column styles */
+
+.right-column {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  flex-basis: 70%;
+  padding-left: 5rem;
+}
+
+h2.details,
+.orderTable caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: start;
+  caption-side: top;
+  margin-bottom: 1rem;
+}
+
+p.details {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.orderTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.type-selection {
+  padding-bottom: 1rem;
+}
+
+.type-selection label {
+  font-size: 1.3rem;
+}
+
+input[type="text"] {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+}
+
+.orderForm {
+  max-width: 80rem;
+}
+
+.orderTable td {
+  vertical-align: top;
+  height: 1rem;
+}
+
+tr:first-of-type {
+  border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+table.orderTable input.orderDate {
+  text-align: left;
+}
+
+input[type="text"] {
+  color: rgb(0, 0, 0);
+}
+
+select.item-type,
+select.dimensions,
+select.size {
+  width: 300px;
+  font-family: "Oswald", sans-serif;
+  display: block;
+  color: #000000;
+  box-shadow: 1px 1px 6px rgba(34, 34, 34, 0.5);
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+td:first-of-type input {
+  text-align: left;
+  border: none;
+}
+
+form.orderForm tr td input {
+  text-align: right;
+  border: none;
+}
+
+tr:nth-of-type(2) td,
+tr:nth-of-type(4) td {
+  padding-top: 1rem;
+}
+
+tr:nth-of-type(3) {
+  border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+tr:nth-of-type(4) td {
+  padding-bottom: 1rem;
+}
+
+tr:nth-of-type(5) td {
+  padding-bottom: 1rem;
+  border-bottom: 3px double rgb(151, 151, 151);
+}
+
+tr:last-of-type td {
+  padding-top: 1rem;
+}
+
+td.right-side {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.addToCartBtn {
+  font-family: "Philosopher", sans-serif;
+  display: block;
+  width: 10rem;
+  height: 2.5rem;
+  margin: 1rem auto;
+  color: #fff;
+  background-color: var(--clr-header-footer-bg);
+  font-size: 1.3em;
+  border-radius: 0rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.addToCartBtn:hover {
+  background-color: var(--clr-menu-text-hover);
+}

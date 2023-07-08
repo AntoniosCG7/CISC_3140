@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
+
+:root {
+  --clr-bg: #fff;
+  --clr-header-footer-bg: #222121;
+  --clr-header-footer-text: #ffffffe0;
+  --clr-title-text: #fff;
+  --clr-menu-text: #fff;
+  --clr-menu-text-hover: #5ccbd0;
+  --clr-footer-items: #ffffff9f;
+  --clr-home-video-text: #fdfdfdef;
+  --clr-newsletter-bg: #eff1f2;
+}
+
+/* CSS styles for the payment form */
+
+#main-container {
+  padding-top: 6.4rem;
+}
+
+#form-container {
+  font-family: "Oswald", sans-serif;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  min-height: 75vh;
+}
+
+#form-container form {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  border: 3px solid #d7d7d7;
+  border-radius: 1rem;
+  background-color: var(--clr-newsletter-bg);
+  box-shadow: rgb(47, 47, 47) 0px 0px 1px, rgb(47, 47, 47) 0px 0px 5px,
+    rgb(47, 47, 47) 0px 0px 10px, rgb(47, 47, 47) 0px 0px 20px;
+}
+
+/* Order Table Styles */
+
+table#orderDetails {
+  border-collapse: collapse;
+  padding-right: none;
+  width: 800px;
+}
+
+table#orderDetails input[type="text"] {
+  background-color: var(--clr-newsletter-bg);
+  width: 300px;
+}
+
+table#orderDetails td {
+  height: 1rem;
+  vertical-align: top;
+}
+
+table#orderDetails tr td {
+  font-weight: bold;
+}
+
+table#orderDetails tr:first-of-type {
+  border-bottom: 2px solid rgb(151, 151, 151);
+}
+
+table#orderDetails input#qty {
+  text-align: left;
+  border: none;
+  width: 11rem;
+}
+
+table#orderDetails tr td:last-of-type input {
+  text-align: right;
+  border: none;
+}
+
+table#orderDetails tr:nth-of-type(3) {
+  border-bottom: 2px solid rgb(151, 151, 151);
+}
+
+table#orderDetails tr:nth-of-type(2) td,
+table#orderDetails tr:nth-of-type(4) td {
+  padding-top: 1rem;
+}
+
+table#orderDetails tr:nth-of-type(5) td {
+  border-bottom: 6px double rgb(151, 151, 151);
+}
+
+table#orderDetails tr:last-of-type td {
+  padding-top: 1rem;
+  border-bottom: 2px solid rgb(151, 151, 151);
+}
+
+table#orderDetails td.rightA {
+  text-align: right;
+}
+
+.row input:required {
+  background-color: #ffe0e0;
+}
+
+.row input:valid {
+  background-color: #ffffff;
+}
+
+/* Payment section styles */
+
+h3.title {
+  padding-top: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.col {
+  flex: 1 1 290px;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.inputBox {
+  margin: 1.3rem 0;
+}
+
+.inputBox label {
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.inputBox input {
+  width: 100%;
+  font-size: 0.9rem;
+  border: 2px solid #ccc;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1rem;
+}
+
+input:focus {
+  border-color: #000;
+}
+
+select#shipping-state,
+select#card-expiry-month,
+select#card-expiry-year {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.9rem;
+  width: 11rem;
+  height: 2.6rem;
+  border: 2px solid #ccc;
+  border-radius: 0.4rem;
+}
+
+select#shipping-state {
+  width: 10rem;
+  height: 2.5rem;
+}
+
+.flex {
+  display: flex;
+  gap: 5px;
+}
+
+.flex .inputBox {
+  margin-top: 0.1rem;
+  width: 50%;
+  height: 50%;
+}
+
+.payment_methods {
+  height: 39px;
+  width: 45px;
+  filter: drop-shadow(0 0 2px #000);
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: #439a46;
+}
+
+input[type="submit"]:hover {
+  background-color: #5acd60;
+}

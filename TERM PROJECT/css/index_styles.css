@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
+
+:root {
+  --clr-bg: #fff;
+  --clr-header-footer-bg: #222121;
+  --clr-header-footer-text: #ffffffe0;
+  --clr-title-text: #fff;
+  --clr-menu-text: #fff;
+  --clr-menu-text-hover: #5ccbd0;
+  --clr-footer-items: #ffffff9f;
+  --clr-home-video-text: #fdfdfdef;
+  --clr-newsletter-bg: #eff1f2;
+}
+
+/* Video Styles */
+
+#home-video-container {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  margin-bottom: -10rem;
+}
+
+#home-video {
+  height: 88%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+#home-video-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+#home-video-text h1 {
+  font-family: "Philosopher", sans-serif;
+  font-size: 5.2rem;
+  font-weight: 800;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 1.4rem;
+}
+
+#home-video-text p {
+  font-family: "Philosopher", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 2.8rem;
+}
+
+#explore-button {
+  font-family: "Philosopher", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 0.7rem 1.8rem;
+  color: #fff;
+  border: 3px solid #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#explore-button:hover {
+  border-radius: 1.8rem;
+}
+
+/* Quick-Info Styles */
+
+#quick-information-about-me {
+  width: 80rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+#quick-information-about-me h2,
+span.animated-number {
+  font-family: "Caprasimo", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+span.animated-number {
+  display: flex;
+  justify-content: center;
+}
+
+#quick-information-about-me p {
+  font-family: "Oswald", cursive;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+/* welcome-about Styles */
+
+#welcome-about {
+  background-color: #eff1f2;
+  border-top: 3px solid var(--clr-header-footer-bg);
+  border-bottom: 3px solid var(--clr-header-footer-bg);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#welcome-about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#welcome-about-content {
+  flex: 1;
+  max-width: 50%;
+  margin-right: 0.5rem;
+}
+
+#welcome-about-content h2 {
+  font-family: "Caprasimo", cursive;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+#welcome-about-content p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  margin-right: 13rem;
+}
+
+#about-image1,
+#about-image2 {
+  width: 425px;
+  height: 290px;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+#related-links {
+  flex: 0 0 50%;
+}
+
+#about-image2 {
+  position: relative;
+  left: 14.5rem;
+}
+
+#related-links h2 {
+  font-family: "Caprasimo", cursive;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  position: relative;
+  left: 15rem;
+}
+
+#related-links ul li {
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  font-size: 1.3rem;
+  margin-bottom: 1.3rem;
+  position: relative;
+  left: 15rem;
+}
+
+#related-links ul li:last-of-type {
+  margin-bottom: 2rem;
+}
+
+#related-links ul li a {
+  color: #000000;
+  transition: all 0.2s ease;
+}
+
+#related-links ul li a:hover {
+  color: var(--clr-menu-text-hover);
+  padding-left: 10px;
+}
+
+/* Popular blog posts */
+
+#popular-blog-posts {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#popular-blog-posts h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#popular-blog-posts-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 80rem;
+}
+
+@media (max-width: 1900px) and (min-height: 600px) {
+  #about-image1,
+  #about-image2 {
+    width: 280px;
+    height: 250px;
+  }
+
+  #about-image2 {
+    left: 14.5rem;
+  }
+
+  #popular-blog-posts .image-link img {
+    width: 260px;
+    height: 260px;
+  }
+}

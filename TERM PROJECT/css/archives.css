@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
+
+:root {
+  --clr-bg: #fff;
+  --clr-header-footer-bg: #222121;
+  --clr-header-footer-text: #ffffffe0;
+  --clr-title-text: #fff;
+  --clr-menu-text: #fff;
+  --clr-menu-text-hover: #5ccbd0;
+  --clr-footer-items: #ffffff9f;
+  --clr-home-video-text: #fdfdfdef;
+  --clr-newsletter-bg: #eff1f2;
+}
+
+/* main image styles */
+
+#archives-image-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#archives-main-image {
+  height: 71vh;
+  filter: blur(2px);
+  filter: brightness(65%);
+}
+
+#archives-main-image-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+#archives-main-image-text h1 {
+  font-family: "Philosopher", sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 1.4rem;
+}
+
+#archives-main-image-text p {
+  font-family: "Philosopher", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Main container styles */
+
+#main-container {
+  padding-top: 3rem;
+}
+
+#main-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+#main-container ol {
+  font-weight: 400;
+  font-size: 1rem;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+#main-container hr {
+  border: 2px solid black;
+}
+
+/* content-titles and content list styles */
+
+#table-of-contents {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#content-section-container {
+  max-width: 80rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+}
+
+#table-of-contents-image-container {
+  width: 70%;
+}
+
+#table-of-contents-image-container img {
+  border-radius: 0.7rem;
+  width: 100%;
+  height: 95%;
+}
+
+#content-titles {
+  list-style: decimal;
+}
+
+#content-titles a {
+  color: #000000;
+}
+
+#content {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+#content-titles li,
+#content li {
+  padding-bottom: 0.5rem;
+}
+
+#content-titles a,
+#content a {
+  color: #000000;
+  font-weight: lighter;
+  transition: all 0.2s ease;
+}
+
+#content-titles,
+#content {
+  padding-left: 1.1rem;
+}
+
+#content-titles li a:hover,
+#content li a:hover {
+  color: var(--clr-menu-text-hover);
+  padding-left: 10px;
+}
+
+/* content-section styles */
+
+.content-section {
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.content-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  margin-bottom: 1rem;
+}
+
+/* Posts styles */
+
+#posts {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border-top: 3px solid black;
+}
+
+#posts h1 {
+  font-size: 2.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#posts-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1900px) and (min-height: 600px) {
+  .image-link img {
+    width: 260px;
+    height: 260px;
+  }
+}

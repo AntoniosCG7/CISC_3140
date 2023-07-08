@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
+
+:root {
+  --clr-bg: #fff;
+  --clr-header-footer-bg: #222121;
+  --clr-header-footer-text: #ffffffe0;
+  --clr-title-text: #fff;
+  --clr-menu-text: #fff;
+  --clr-menu-text-hover: #5ccbd0;
+  --clr-footer-items: #ffffff9f;
+  --clr-home-video-text: #fdfdfdef;
+  --clr-newsletter-bg: #eff1f2;
+}
+
+#main-container {
+  padding-top: 10rem;
+}
+
+#order-confirmation {
+  font-family: "Oswald", sans-serif;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  padding-bottom: 4rem;
+}
+
+#order-confirmation h1 {
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 2rem;
+}

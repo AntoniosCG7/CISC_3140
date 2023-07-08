@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
+
+:root {
+  --clr-bg: #fff;
+  --clr-header-footer-bg: #222121;
+  --clr-header-footer-text: #ffffffe0;
+  --clr-title-text: #fff;
+  --clr-menu-text: #fff;
+  --clr-menu-text-hover: #5ccbd0;
+  --clr-footer-items: #ffffff9f;
+  --clr-home-video-text: #fdfdfdef;
+  --clr-newsletter-bg: #eff1f2;
+}
+
+/* main-container styles */
+
+#main-container {
+  padding-top: 3rem;
+}
+
+/* post-link and post-title styles */
+
+.post-link img {
+  width: 400px;
+  height: 350px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.post-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+/* Category styles */
+
+#destination-categories-container h1 {
+  font-size: 3.5rem;
+}
+
+#destination-categories {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.category {
+  max-width: 80rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 1900px) and (min-height: 600px) {
+  .post-link img {
+    width: 260px;
+    height: 260px;
+  }
+}
