@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+
+:root {
+  --clr-bg: #fff;
+  --clr-header-footer-bg: #222121;
+  --clr-header-footer-text: #ffffffe0;
+  --clr-title-text: #fff;
+  --clr-menu-text: #fff;
+  --clr-menu-text-hover: #5ccbd0;
+  --clr-footer-items: #ffffff9f;
+  --clr-home-video-text: #fdfdfdef;
+  --clr-newsletter-bg: #eff1f2;
+}
+
+/* main-container styles */
+
+#main-container {
+  padding-top: 3rem;
+}
+
+/* contact-text-container styles */
+
+#contact-text-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+#contact-text-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#contact-text-container p:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/* Form Layout Styles */
+
+#contact-form-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#contact-form {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  border: 3px solid #d7d7d7;
+  border-radius: 1rem;
+  background-color: var(--clr-newsletter-bg);
+  box-shadow: rgb(47, 47, 47) 0px 0px 1px, rgb(47, 47, 47) 0px 0px 5px,
+    rgb(47, 47, 47) 0px 0px 10px, rgb(47, 47, 47) 0px 0px 20px;
+}
+
+legend {
+  font-weight: bolder;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-decoration: underline;
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 25rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 0.4rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  font-family: "Philosopher", sans-serif;
+}
+
+select {
+  font-family: "Oswald", sans-serif;
+}
+
+input[type="checkbox"] {
+  margin-bottom: 1rem;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  color: white;
+  cursor: pointer;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  background-color: #439a46;
+}
+
+input[type="submit"]:hover {
+  background-color: #5acd60;
+}
+
+input[type="reset"] {
+  background-color: #782121;
+}
+
+input[type="reset"]:hover {
+  background-color: #ff0303;
+}
+
+/* Validation Styles */
+
+textarea:focus {
+  background-color: rgb(220, 255, 220);
+}
+
+#name:focus:valid,
+#email:focus:valid,
+#phone:focus:valid {
+  background-color: rgb(220, 255, 220);
+  background-image: url(../img/valid.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+#name:focus:invalid,
+#email:focus:invalid,
+#phone:focus:invalid {
+  background-color: rgb(255, 232, 233);
+  background-image: url(../img/invalid.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+/* faq section styles */
+
+#faq-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#faq-container > h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.faq {
+  margin-bottom: 1.6rem;
+}
+
+.faq h1 {
+  text-align: start;
+  font-size: 1.4rem;
+  text-shadow: none;
+}
+
+.question {
+  font-weight: bold;
+}
+
+.answer {
+  margin-top: 0.5rem;
+}

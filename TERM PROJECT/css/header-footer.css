@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
 
 :root {
   --clr-bg: #fff;
@@ -9,41 +10,13 @@
   --clr-menu-text-hover: #5ccbd0;
   --clr-footer-items: #ffffff9f;
   --clr-home-video-text: #fdfdfdef;
-}
-
-/* Default styles */
-
-* {
-  box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
-}
-
-html {
-  font-family: "Caprasimo", cursive;
-  font-size: 0.7rem;
-  font-weight: 450;
-  background-color: var(--clr-bg);
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-#header-container,
-#footer-container {
-  margin: 0px auto;
-  min-height: 100%;
-  max-width: 80rem;
-  min-width: 15rem;
+  --clr-newsletter-bg: #eff1f2;
 }
 
 /* Header styles */
 
 header {
+  font-family: "Caprasimo", cursive;
   background-color: var(--clr-header-footer-bg);
   width: 100%;
   position: fixed;
@@ -59,8 +32,9 @@ header {
 }
 
 #website-title {
-  color: var(--clr-title-text);
+  font-family: "Caprasimo", cursive;
   font-size: 2.5rem;
+  color: var(--clr-title-text);
 }
 
 #website-logo {
@@ -75,7 +49,7 @@ header {
 
 #menu-items li a {
   color: var(--clr-menu-text);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
   margin-left: 1rem;
   position: relative;
@@ -105,10 +79,11 @@ header {
 /* Footer Styles */
 
 footer {
+  font-family: "Caprasimo", cursive;
+  font-size: 1.2rem;
   z-index: 100;
   background: var(--clr-header-footer-bg);
   color: var(--clr-header-footer-text);
-  font-size: 1.2rem;
 }
 
 #footer-container {
@@ -127,6 +102,8 @@ footer {
 }
 
 .footer-column h1 {
+  font-family: "Caprasimo", cursive;
+  text-align: start;
   color: var(--clr-menu-text-hover);
   font-size: 1.1rem;
   margin-top: 1rem;
@@ -185,4 +162,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#footer-copyright p {
+  font-family: "Caprasimo", cursive;
+  font-size: 0.8rem;
 }

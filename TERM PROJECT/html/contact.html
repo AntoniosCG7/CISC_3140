@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact &#8226 Traveler's Trails</title>
+	<link rel="stylesheet" href="/TERM PROJECT/css/reset.css">
+	<link rel="stylesheet" href="/TERM PROJECT/css/header-footer.css">
+	<link rel="stylesheet" href="/TERM PROJECT/css/main_template.css">
+	<link rel="stylesheet" href="/TERM PROJECT/css/contact.css">
+	<link rel="shortcut icon" href="/TERM PROJECT/img/beach.png" type="image/x-icon">
+</head>
+
+<body>
+	<header>
+		<div id="header-container">
+			<h1>
+				<img id="website-logo" src="/TERM PROJECT/img/beach.png" alt="App-Icon">
+				<a id="website-title" href="/TERM PROJECT/html/index.html">Traveler's Trails</a>
+			</h1>
+			<nav id="menu">
+				<ul id="menu-items">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="destinations.html">DESTINATIONS</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="online-store.html">ONLINE STORE</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+
+		<div class="main-image-container">
+			<img src="/TERM PROJECT/img/demo5.jpg" alt="main image" class="main-image">
+			<div class="main-image-text">
+				<h1>CONTACT</h1>
+				<p>I welcome your questions, comments, or suggestions—please don't hesitate to reach out!</p>
+			</div>
+		</div>
+
+		<div id="main-container">
+			<div id="contact-text-container">
+				<h1>Get in Touch</h1>
+				<p>
+					I would love to hear from you! Whether you have a burning question, a collaboration opportunity, or
+					simply want to share
+					your travel experiences, I'm here to connect with fellow adventurers like you. Fill out the form
+					below,
+					and I'll get
+					back to you as soon as possible.
+				</p>
+				<p>
+					Your feedback, suggestions, and inquiries are invaluable to me as I strive to create a vibrant
+					travel
+					community. I value
+					your thoughts and look forward to engaging with you.
+				</p>
+				<p>
+					Join me on this exciting journey as we explore the world together. Let's share stories, swap tips,
+					and
+					inspire each
+					other to embark on new adventures. I can't wait to hear from you!
+				</p>
+			</div>
+
+			<div id="contact-form-container">
+				<form action="submit_form.php" method="POST" id="contact-form">
+					<fieldset id="user-info">
+						<legend>Contact Form</legend>
+
+						<div class="form-row">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="name" required placeholder="Enter your name"
+								class="input">
+						</div>
+
+						<div class="form-row">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" required placeholder="Enter your email address"
+								class="input">
+						</div>
+
+						<div class="form-row">
+							<label for="phone">Phone Number</label>
+							<input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
+								pattern="^\d{10}$" class="input">
+						</div>
+
+						<div class="form-row">
+							<label for="subject">Subject</label>
+							<select id="subject" name="subject" required>
+								<option value="general">General Inquiry</option>
+								<option value="collaboration">Collaboration Opportunity</option>
+								<option value="advertising">Advertising</option>
+								<option value="feedback">Feedback</option>
+							</select>
+						</div>
+
+						<div class="form-row">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+						</div>
+
+						<div class="form-row" id="checkbox">
+							<label for="contact-method">Preferred Contact Method</label>
+							<input type="checkbox" id="contact-email" name="contact-method" value="email" class="input">
+							<label for="contact-email">Email</label>
+							<input type="checkbox" id="contact-phone" name="contact-method" value="phone" class="input">
+							<label for="contact-phone">Phone</label>
+						</div>
+
+						<div class="form-row">
+							<input type="submit" value="SUBMIT" class="input">
+							<input type="reset" value="RESET" class="input">
+						</div>
+					</fieldset>
+				</form>
+			</div>
+
+			<div id="faq-container">
+				<h1>Frequently Asked Questions</h1>
+				<div class="faq">
+					<h1 class="question">Question 1: What is your response time for inquiries?</h1>
+					<p class="answer">I strive to respond to all inquiries within 24-48 hours.</p>
+				</div>
+				<div class="faq">
+					<h1 class="question">Question 2: Can I submit a guest post for your blog?</h1>
+					<p class="answer">Yes, you can submit a guest post for my blog. Please reach out to me using the
+						contact
+						form above for
+						guidelines and submission details.</p>
+				</div>
+				<div class="faq">
+					<h1 class="question">Question 3: Do you offer advertising opportunities on your blog?</h1>
+					<p class="answer">Yes, I offer various advertising options. Please reach out to me using the contact
+						form above
+						for more information.</p>
+				</div>
+				<div class="faq">
+					<h1 class="question">Question 4: How can I collaborate with your travel blog?</h1>
+					<p class="answer">I'm open to collaborations with other travel bloggers, brands, and tourism boards.
+						Please
+						contact me through the form above, and let's discuss potential partnership opportunities.</p>
+				</div>
+				<div class="faq">
+					<h1 class="question">Question 5: Can I request a destination or topic to be covered on your blog?
+					</h1>
+					<p class="answer">Absolutely! I value your suggestions. Feel free to use the contact form to share
+						your
+						ideas
+						for destinations or topics you'd like to see featured on my blog.</p>
+				</div>
+				<div class="faq">
+					<h1 class="question">Question 6: Are the photos on your blog taken by you?</h1>
+					<p class="answer">Yes, the majority of the photos on my blog are taken by me during my travel
+						experiences.</p>
+				</div>
+				<div class="faq">
+					<h1 class="question">Question 7: Can I share your blog posts on social media?</h1>
+					<p class="answer">Absolutely! You are welcome to share my blog posts on social media. I appreciate
+						your
+						support and
+						spreading the word about my blog.</p>
+				</div>
+				<div class="faq">
+					<h1 class="question">Question 8: Can I use your blog content on my own website or publication?</h1>
+					<p class="answer">All the content on my blog is protected by copyright. If you wish to use any of my
+						content, please
+						contact me to discuss proper attribution and usage permissions.</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="newsletter">
+			<h2>Newsletter</h2>
+			<p>Stay up-to-date with the latest travel inspiration, tips, and exclusive offers!</p>
+			<form action="newsletter-action-url" method="POST">
+				<input type="email" name="email" placeholder="Your email address..." required>
+				<button type="submit">SUBSCRIBE</button>
+			</form>
+		</div>
+	</main>
+
+	<footer>
+		<div id="footer-container">
+			<div class="footer-row">
+				<div class="footer-column">
+					<h1>ABOUT</h1>
+					<ul>
+						<li><a href="/TERM PROJECT/html/about.html">About Traveler's Trails</a></li>
+						<li><a href="#">Affiliate Disclosures</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms Of Use</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h1>HELP</h1>
+					<ul>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Merchandising License</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h1>CONTACT</h1>
+					<div id="contact">
+						<a href="mailto:t_trails@gmail.com"><img src="/TERM PROJECT/img/mail.png" alt="mail:"></a>
+						<a href="tel:+13439868404"><img src="/TERM PROJECT/img/smartphone.png" alt="mobile:"></a>
+					</div>
+				</div>
+				<div class="footer-column">
+					<h1>FOLLOW ME</h1>
+					<div id="social-media">
+						<a href="https://www.youtube.com/" target="_blank"><img src="/TERM PROJECT/img/youtube.png"
+								alt="youtube-link"></a>
+						<a href="https://twitter.com/" target="_blank"><img src="/TERM PROJECT/img/twitter.png"
+								alt="twitter-link"></a>
+						<a href="https://www.instagram.com/" target="_blank"><img src="/TERM PROJECT/img/instagram.png"
+								alt="instagram-link"></a>
+						<a href="https://www.facebook.com/" target="_blank"><img src="/TERM PROJECT/img/facebook.png"
+								alt="facebook-link"></a>
+					</div>
+				</div>
+			</div>
+			<br>
+			<hr id="solid-line-divider">
+			<div id="footer-copyright">
+				<p>&copy; Traveler's Trails 2023. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

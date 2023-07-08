@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
+
+:root {
+  --clr-bg: #fff;
+  --clr-header-footer-bg: #222121;
+  --clr-header-footer-text: #ffffffe0;
+  --clr-title-text: #fff;
+  --clr-menu-text: #fff;
+  --clr-menu-text-hover: #5ccbd0;
+  --clr-footer-items: #ffffff9f;
+  --clr-home-video-text: #fdfdfdef;
+  --clr-newsletter-bg: #eff1f2;
+}
+
+/* Default styles */
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: "Caprasimo", cursive;
+  font-size: 0.7rem;
+  font-weight: 400;
+  background-color: var(--clr-bg);
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+main li {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+hr {
+  border-top: 3px solid var(--clr-header-footer-bg);
+  margin-top: 1rem;
+}
+
+#header-container,
+#footer-container {
+  margin: 0px auto;
+  min-height: 100%;
+  max-width: 80rem;
+  min-width: 15rem;
+}
+
+#main-container {
+  padding-top: 5rem;
+}
+
+/* main image styles */
+
+.main-image-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-image {
+  height: 71vh;
+  filter: blur(2px);
+  filter: brightness(75%);
+}
+
+.main-image-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.main-image-text h1 {
+  font-family: "Philosopher", sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 1.4rem;
+}
+
+.main-image-text p {
+  font-family: "Philosopher", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 1.4rem;
+}
+
+/* post-links and post-title styles */
+
+.post-link img {
+  width: 350px;
+  height: 350px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.post-link img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.post-title {
+  font-family: "Caprasimo", cursive;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* additional-images styles */
+
+.additional-images {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.7rem;
+}
+
+/* Newsletter styles */
+
+#newsletter {
+  background-color: #eff1f2;
+  padding: 5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 0rem;
+  border-top: 3px solid var(--clr-header-footer-bg);
+}
+
+#newsletter h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#newsletter p {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+#newsletter input[type="email"] {
+  font-family: "Philosopher", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  width: 25rem;
+  padding: 1.2rem 1rem;
+  margin-right: 0.5rem;
+}
+
+#newsletter button[type="submit"] {
+  font-family: "Philosopher", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000000;
+  border: 1px solid #ccc;
+  width: 8rem;
+  padding: 1.2rem 1rem;
+  cursor: pointer;
+}
+
+#newsletter button[type="submit"]:hover {
+  background-color: var(--clr-menu-text-hover);
+}

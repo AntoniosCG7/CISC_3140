@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery &#8226 Traveler's Trails</title>
+	<link rel="stylesheet" href="/TERM PROJECT/css/reset.css">
+	<link rel="stylesheet" href="/TERM PROJECT/css/header-footer.css">
+	<link rel="stylesheet" href="/TERM PROJECT/css/main_template.css">
+	<link rel="stylesheet" href="/TERM PROJECT/css/gallery.css">
+	<link rel="shortcut icon" href="/TERM PROJECT/img/beach.png" type="image/x-icon">
+</head>
+
+<body>
+	<header>
+		<div id="header-container">
+			<h1>
+				<img id="website-logo" src="/TERM PROJECT/img/beach.png" alt="App-Icon">
+				<a id="website-title" href="/TERM PROJECT/html/index.html">Traveler's Trails</a>
+			</h1>
+			<nav id="menu">
+				<ul id="menu-items">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="destinations.html">DESTINATIONS</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="online-store.html">ONLINE STORE</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="main-image-container">
+			<img src="/TERM PROJECT/img/united-states.jpg" alt="main image" class="main-image">
+			<div class="main-image-text">
+				<h1>GALLERY</h1>
+				<p>Some pictures from my travels</p>
+			</div>
+		</div>
+
+		<div id="main-container">
+			<div id="lightbox" onclick="closeLightbox()">
+				<img id="lightbox-image" src="" alt="lightbox image" />
+				<div id="thumbnail-list"></div>
+			</div>
+
+
+			<div id="gallery">
+				<div id="image-list">
+					<img class="thumbnail" src="/TERM PROJECT/img/austria.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/austria.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/beach.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/beach.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/croatia.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/croatia.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/Destinations-image.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/Destinations-image.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/demo1.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/demo1.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/demo2.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/demo2.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/demo3.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/demo3.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/demo4.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/demo4.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/demo5.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/demo5.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/dino-reichmuth-A5rCN8626Ck-unsplash.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/dino-reichmuth-A5rCN8626Ck-unsplash.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/egypt.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/egypt.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/france.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/france.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/germany.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/germany.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/greece.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/greece.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/greece1.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/greece1.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/greece2.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/greece2.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/roland-fenyes-IooHbXUfOeA-unsplash.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/roland-fenyes-IooHbXUfOeA-unsplash.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/greece3.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/greece3.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/zakynthos.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/zakynthos.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/india.png"
+						onclick="openLightbox('/TERM PROJECT/img/india.png')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/indonesia.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/indonesia.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/italy.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/italy.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/japan.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/japan.jpg')" />
+					<img class="thumbnail" src="/TERM PROJECT/img/jordan.jpg"
+						onclick="openLightbox('/TERM PROJECT/img/jordan.jpg')" />
+				</div>
+				<div id="gear-container">
+					<div id="left-content">
+						<h1>MY GEAR</h1>
+						<p>This collection represents a glimpse into the essential tools I use to bring my
+							photography to life. Whether
+							I'm exploring breathtaking landscapes or immersing myself in vibrant cultures, these gear
+							choices have proven to be
+							reliable companions on my photographic journey.
+							If you're curious to learn more about the specific
+							equipment I use, I invite
+							you to explore the links below!
+						</p>
+					</div>
+					<div id="right-content">
+						<div class="image-container">
+							<a href="https://a.co/d/bECzSL3" target="_blank"><img src="../img/digital-camera.jpg"
+									alt="OM System OM-1"></a>
+						</div>
+
+						<div class="image-container">
+							<a href=" https://a.co/d/hwkC1Xs" target="_blank"><img src="../img/drone.jpg"
+									alt="DJI Mini 3 Pro"></a>
+						</div>
+
+						<div class="image-container">
+							<a href="https://a.co/d/75ACe7x" target="_blank"><img src="../img/underwater-go-pro.jpg"
+									alt="GoPro HERO11 Black"></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="main-container">
+			<div id="newsletter">
+				<h2>Newsletter</h2>
+				<p>Stay up-to-date with the latest travel inspiration, tips, and exclusive offers!</p>
+				<form action="newsletter-action-url" method="POST">
+					<input type="email" name="email" placeholder="Your email address..." required>
+					<button type="submit">SUBSCRIBE</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div id="footer-container">
+			<div class="footer-row">
+				<div class="footer-column">
+					<h1>ABOUT</h1>
+					<ul>
+						<li><a href="/TERM PROJECT/html/about.html">About Traveler's Trails</a></li>
+						<li><a href="#">Affiliate Disclosures</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms Of Use</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h1>HELP</h1>
+					<ul>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Merchandising License</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h1>CONTACT</h1>
+					<div id="contact">
+						<a href="mailto:t_trails@gmail.com"><img src="/TERM PROJECT/img/mail.png" alt="mail:"></a>
+						<a href="tel:+13439868404"><img src="/TERM PROJECT/img/smartphone.png" alt="mobile:"></a>
+					</div>
+				</div>
+				<div class="footer-column">
+					<h1>FOLLOW ME</h1>
+					<div id="social-media">
+						<a href="https://www.youtube.com/" target="_blank"><img src="/TERM PROJECT/img/youtube.png"
+								alt="youtube-link"></a>
+						<a href="https://twitter.com/" target="_blank"><img src="/TERM PROJECT/img/twitter.png"
+								alt="twitter-link"></a>
+						<a href="https://www.instagram.com/" target="_blank"><img src="/TERM PROJECT/img/instagram.png"
+								alt="instagram-link"></a>
+						<a href="https://www.facebook.com/" target="_blank"><img src="/TERM PROJECT/img/facebook.png"
+								alt="facebook-link"></a>
+					</div>
+				</div>
+			</div>
+			<br>
+			<hr id="solid-line-divider">
+			<div id="footer-copyright">
+				<p>&copy; Traveler's Trails 2023. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="/TERM PROJECT/js/gallery.js"></script>
+</body>
+
+</html>

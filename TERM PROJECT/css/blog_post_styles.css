@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
+
+:root {
+  --clr-bg: #fff;
+  --clr-header-footer-bg: #222121;
+  --clr-header-footer-text: #ffffffe0;
+  --clr-title-text: #fff;
+  --clr-menu-text: #fff;
+  --clr-menu-text-hover: #5ccbd0;
+  --clr-footer-items: #ffffff9f;
+  --clr-home-video-text: #fdfdfdef;
+  --clr-newsletter-bg: #eff1f2;
+}
+
+/* title_image styles */
+
+#main-image {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-image h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.6);
+}
+
+#main-image img {
+  width: 800px;
+  height: 800px;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Guide styles */
+
+#background {
+  border-top: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+}
+
+#guide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#guide h1,
+#guide p {
+  margin-bottom: 1rem;
+}
+
+#guide h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+#guide p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+#guide li {
+  font-size: 1.5rem;
+  font-weight: 800;
+  list-style: lower-alpha;
+  list-style-position: inside;
+  margin-top: 1rem;
+}
+
+/* top-rated-hotels styles */
+
+#top-rated-hotels {
+  max-width: 80rem;
+  text-align: center;
+}
+
+#top-rated-hotels img {
+  width: 800px;
+  height: 400px;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#top-rated-hotels img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+#top-rated-hotels h2,
+#top-rated-hotels p {
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+/* Travel Rules Styles */
+
+#travel-rules {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#travel-rules-list {
+  text-align: center;
+}
+
+#travel-rules h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#travel-rules li {
+  font-weight: 400;
+  font-size: 1.5rem;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  margin-bottom: 1.2rem;
+}

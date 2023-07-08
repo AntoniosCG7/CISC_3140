@@ -4,27 +4,24 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Traveler's Trails</title>
+	<title>Home Page &#8226 Traveler's Trails</title>
 	<link rel="stylesheet" href="/TERM PROJECT/css/reset.css">
 	<link rel="stylesheet" href="/TERM PROJECT/css/header-footer.css">
-	<link rel="stylesheet" href="/TERM PROJECT/css/styles_index.css">
+	<link rel="stylesheet" href="/TERM PROJECT/css/main_template.css">
+	<link rel="stylesheet" href="/TERM PROJECT/css/index_styles.css">
 	<link rel="shortcut icon" href="/TERM PROJECT/img/beach.png" type="image/x-icon">
-
 </head>
 
 <body>
 	<header>
 		<div id="header-container">
-			<!-- Website Title with logo-->
 			<h1>
 				<img id="website-logo" src="/TERM PROJECT/img/beach.png" alt="App-Icon">
 				<a id="website-title" href="/TERM PROJECT/html/index.html">Traveler's Trails</a>
 			</h1>
-			<!-- Navigation menu -->
 			<nav id="menu">
 				<ul id="menu-items">
 					<li><a href="index.html">HOME</a></li>
-					<li><a href="destinations.html">BLOG</a></li>
 					<li><a href="destinations.html">DESTINATIONS</a></li>
 					<li><a href="gallery.html">GALLERY</a></li>
 					<li><a href="online-store.html">ONLINE STORE</a></li>
@@ -37,7 +34,7 @@
 
 	<main>
 		<div id="home-video-container">
-			<video src="/TERM PROJECT/video/beach4k.mp4" autoplay muted loop></video>
+			<video src="/TERM PROJECT/video/beach4k.mp4" id="home-video" autoplay muted loop></video>
 			<div id="home-video-text">
 				<h1>EXPLORE, DISCOVER, INSPIRE: Unleash Your Wanderlust</h1>
 				<p>
@@ -45,13 +42,14 @@
 					hidden gems found
 					across the globe. Join me on this extraordinary journey of discovery!
 				</p>
-				<button id="explore-button">START EXPLORING</button>
+				<a href="destinations.html" class="button" id="explore-button">START EXPLORING</a>
 			</div>
 		</div>
+
 		<div id="main-container">
 			<div id="quick-information-about-me">
 				<div id="information-1">
-					<h2>14</h2>
+					<span class="animated-number" id="animated-number-1">24</span>
 					<p>Countries Visited</p>
 				</div>
 				<div id="information-2">
@@ -59,115 +57,113 @@
 					<p>Current Location</p>
 				</div>
 				<div id="information-3">
-					<h2>1723</h2>
+					<span class="animated-number" id="animated-number-2">717</span>
 					<p>Days On The Road</p>
 				</div>
 			</div>
+		</div>
+
+		<div id="welcome-about">
 			<div id="welcome-about-container">
-				<div id="welcome-about">
-					<div id="welcome-about-content">
-						<h2>About Traveler's Trails</h2>
-						<img src="/TERM PROJECT/img/welcome-about1.jpg" alt="About Image 1" id="about-image1">
-						<p>Welcome to my vibrant travel world! I'm thrilled to have you join me on this incredible
-							journey
-							where
-							wanderlust meets
-							practicality. As a passionate explorer and dedicated travel blogger, my mission is to help
-							millions
-							of fellow
-							adventurers save money, travel more, and have authentic experiences in every destination
-							they
-							visit.
-						</p>
-						<br>
-						<p>
-							Through this travel blog, I aim to be your trusted guide, sharing insider tips, expert
-							advice,
-							and
-							budget-friendly
-							strategies that empower you to make the most of your travels. From hidden gems off the
-							beaten
-							path
-							to money-saving hacks
-							and immersive cultural encounters, I'll be your compass, steering you towards remarkable
-							adventures
-							and unforgettable
-							memories.
-						</p>
-					</div>
-					<aside id="related-links">
-						<h2>Start Planning Your Trip</h2>
-						<ul>
-							<li><a href="https://thriftytraveler.com/guides/how-to-find-cheap-flights/"
-									target="_blank">How to Find
-									Cheap Flights</a></li>
-							<li><a href=" https://mindthetravel.com/how-to-find-cheap-accommodation/"
-									target="_blank">How to Find Cheap
-									Accommodation</a></li>
-							<li><a href="https://www.ems.com/how-to-choose-a-backpack-expert-tips-for-finding-the-right-size-fit-and-features"
-									target="_blank">How to Choose a Backpack</a></li>
-							<li><a href="https://www.nomadicmatt.com/travel-blogs/61-travel-tips/" target="_blank">Tips
-									For New Travelers</a></li>
-							<li><a href="https://www.insuremytrip.com/travel-advice/travel-safety/common-travel-scams-to-avoid/"
-									target="_blank">Travel Scams to Avoid</a></li>
-							<li><a href="https://www.nerdwallet.com/article/insurance/travel-insurance"
-									target="_blank">How to Buy Travel Insurance</a></li>
-							<li><a href="https://www.goodhousekeeping.com/life/a27056659/packing-tips/"
-									target="_blank">Packing Tips and Essentials</a></li>
-							<li><a href="https://www.myglobalviewpoint.com/best-travel-sites/" target="_blank">Essential
-									Travel Websites</a></li>
-							<li><a href="https://www.worldpackers.com/articles/traveling-alone-as-a-woman"
-									target="_blank">Solo Female Travel Tips</a></li>
-							<li><a href="https://www.nomadicmatt.com/travel-blogs/my-favorite-hostels-in-the-world/"
-									target="_blank">Best Hostels</a></li>
-						</ul>
-						<img src=" /TERM PROJECT/img/welcome-about2.jpg" alt="About Image 2" id="about-image2">
-					</aside>
+				<div id="welcome-about-content">
+					<h2>About Traveler's Trails</h2>
+					<img src="/TERM PROJECT/img/welcome-about1.jpg" alt="About Image 1" id="about-image1">
+					<p>Welcome to my vibrant travel world! I'm thrilled to have you join me on this incredible
+						journey
+						where
+						wanderlust meets
+						practicality. As a passionate explorer and dedicated travel blogger, my mission is to help
+						millions
+						of fellow
+						adventurers save money, travel more, and have authentic experiences in every destination
+						they
+						visit.
+					</p>
+					<br>
+					<p>
+						Through this travel blog, I aim to be your trusted guide, sharing insider tips, expert
+						advice,
+						and
+						budget-friendly
+						strategies that empower you to make the most of your travels. From hidden gems off the
+						beaten
+						path
+						to money-saving hacks
+						and immersive cultural encounters, I'll be your compass, steering you towards remarkable
+						adventures
+						and unforgettable
+						memories.
+					</p>
 				</div>
+				<aside id="related-links">
+					<h2>Start Planning Your Trip</h2>
+					<ul>
+						<li><a href="https://thriftytraveler.com/guides/how-to-find-cheap-flights/" target="_blank">How
+								to Find
+								Cheap Flights</a></li>
+						<li><a href=" https://mindthetravel.com/how-to-find-cheap-accommodation/" target="_blank">How to
+								Find Cheap
+								Accommodation</a></li>
+						<li><a href="https://www.ems.com/how-to-choose-a-backpack-expert-tips-for-finding-the-right-size-fit-and-features"
+								target="_blank">How to Choose a Backpack</a></li>
+						<li><a href="https://www.nomadicmatt.com/travel-blogs/61-travel-tips/" target="_blank">Tips
+								For New Travelers</a></li>
+						<li><a href="https://www.insuremytrip.com/travel-advice/travel-safety/common-travel-scams-to-avoid/"
+								target="_blank">Travel Scams to Avoid</a></li>
+						<li><a href="https://www.nerdwallet.com/article/insurance/travel-insurance" target="_blank">How
+								to Buy Travel Insurance</a></li>
+						<li><a href="https://www.goodhousekeeping.com/life/a27056659/packing-tips/"
+								target="_blank">Packing Tips and Essentials</a></li>
+						<li><a href="https://www.myglobalviewpoint.com/best-travel-sites/" target="_blank">Essential
+								Travel Websites</a></li>
+						<li><a href="https://www.worldpackers.com/articles/traveling-alone-as-a-woman"
+								target="_blank">Solo Female Travel Tips</a></li>
+						<li><a href="https://www.nomadicmatt.com/travel-blogs/my-favorite-hostels-in-the-world/"
+								target="_blank">Best Hostels</a></li>
+					</ul>
+					<img src=" /TERM PROJECT/img/welcome-about2.jpg" alt="About Image 2" id="about-image2">
+				</aside>
 			</div>
+		</div>
+		<div id="popular-blog-posts">
+			<h2>Popular Travel Blog Posts</h2>
 			<div id="popular-blog-posts-container">
-				<h2>Popular Travel Blog Posts</h2>
-				<div id="popular-blog-posts">
-					<div class="box">
-						<a href="https://www.youtube.com/" target="_blank"><img src="/TERM PROJECT/img/chichen itza.jpg"
-								alt="Chichen Itza"></a>
-						<p>CHICHEN ITZA MEXICO GUIDE</p>
-					</div>
-					<div class="box">
-						<a href="https://www.youtube.com/" target="_blank"><img src="/TERM PROJECT/img/zakynthos.jpg"
-								alt="Zakynthos Greece"></a>
-						<p>ZAKYNTHOS GREECE GUIDE</p>
-					</div>
-					<div class="box">
-						<a href="https://www.youtube.com/" target="_blank"><img src="/TERM PROJECT/img/petra.jpg"
-								alt="Petra Jordan"></a>
-						<p>PETRA JORDAN GUIDE</p>
-					</div>
-					<div class="box">
-						<a href="https://www.youtube.com/" target="_blank"><img
-								src="/TERM PROJECT/img/Cappadocia-Turkey.jpg" alt="Cappadocia Turkey"></a>
-						<p>CAPPADOCIA TURKEY GUIDE</p>
-					</div>
-					<div class="box">
-						<a href="https://www.youtube.com/" target="_blank"><img src="/TERM PROJECT/img/Colosseum.jpg"
-								alt="Rome Italy"></a>
-						<p>ROME ITALY GUIDE</p>
-					</div>
-					<div class="box">
-						<a href="https://www.youtube.com/" target="_blank"><img src="/TERM PROJECT/img/machu-picchu.jpg"
-								alt="Machu Picchu"></a>
-						<p>MACHU PICCHU PERU GUIDE</p>
-					</div>
+				<div class="post-link">
+					<a href="/TERM PROJECT/html/chichen_itza.html"><img src="/TERM PROJECT/img/chichen itza.jpg"
+							alt="Chichen Itza"></a>
+					<p class="post-title">CHICHEN ITZA MEXICO GUIDE</p>
+				</div>
+				<div class="post-link">
+					<a href="#" target="_blank"><img src="/TERM PROJECT/img/zakynthos.jpg" alt="Zakynthos Greece"></a>
+					<p class="post-title">ZAKYNTHOS GREECE GUIDE</p>
+				</div>
+				<div class="post-link">
+					<a href="#" target="_blank"><img src="/TERM PROJECT/img/petra.jpg" alt="Petra Jordan"></a>
+					<p class="post-title">PETRA JORDAN GUIDE</p>
+				</div>
+				<div class="post-link">
+					<a href="#" target="_blank"><img src="/TERM PROJECT/img/Cappadocia-Turkey.jpg"
+							alt="Cappadocia Turkey"></a>
+					<p class="post-title">CAPPADOCIA TURKEY GUIDE</p>
+				</div>
+				<div class="post-link">
+					<a href="#" target="_blank"><img src="/TERM PROJECT/img/Colosseum.jpg" alt="Rome Italy"></a>
+					<p class="post-title">ROME ITALY GUIDE</p>
+				</div>
+				<div class="post-link">
+					<a href="#" target="_blank"><img src="/TERM PROJECT/img/machu-picchu.jpg" alt="Machu Picchu"></a>
+					<p class="post-title">MACHU PICCHU PERU GUIDE</p>
 				</div>
 			</div>
-			<div id="newsletter">
-				<h3>Newsletter</h3>
-				<p>Stay up-to-date with the latest travel inspiration, tips, and exclusive offers!</p>
-				<form action="newsletter-action-url" method="POST">
-					<input type="email" name="email" placeholder="Your email address..." required>
-					<button type="submit">SUBSCRIBE</button>
-				</form>
-			</div>
+		</div>
+		<div id="newsletter">
+			<h2>Newsletter</h2>
+			<p>Stay up-to-date with the latest travel inspiration, tips, and exclusive offers!</p>
+			<form action="newsletter-action-url" method="POST">
+				<input type="email" name="email" placeholder="Your email address..." required>
+				<button type="submit">SUBSCRIBE</button>
+			</form>
+		</div>
 		</div>
 	</main>
 
@@ -177,7 +173,7 @@
 				<div class="footer-column">
 					<h1>ABOUT</h1>
 					<ul>
-						<li><a href="#">About Traveler's Trails</a></li>
+						<li><a href="/TERM PROJECT/html/about.html">About Traveler's Trails</a></li>
 						<li><a href="#">Affiliate Disclosures</a></li>
 						<li><a href="#">Privacy Policy</a></li>
 						<li><a href="#">Terms Of Use</a></li>
@@ -221,7 +217,8 @@
 		</div>
 	</footer>
 
-	<script type="javascript" src="/TERM PROJECT/js/index.js"></script>
+	<script type="text/javascript" src="/TERM PROJECT/js/animatedNumber.js"></script>
+
 </body>
 
 </html>
