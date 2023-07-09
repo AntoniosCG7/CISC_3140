@@ -185,7 +185,7 @@
 }
 
 @media (max-width: 1900px) and (min-height: 600px) {
-  .image-link img {
+  .post-link img {
     width: 260px;
     height: 260px;
   }

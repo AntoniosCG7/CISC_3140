@@ -103,3 +103,22 @@
 .image-container:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 1900px) and (min-height: 600px) {
+  .thumbnail {
+    width: 200px;
+    height: 200px;
+  }
+
+  #gear-container a img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .image-container {
+    padding: 0rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

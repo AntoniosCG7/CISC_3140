@@ -304,3 +304,22 @@ td.right-side {
 .addToCartBtn:hover {
   background-color: var(--clr-menu-text-hover);
 }
+
+@media (max-width: 1900px) and (min-height: 600px) {
+  .image-container {
+    max-width: none;
+  }
+
+  select.item-type,
+  select.dimensions,
+  select.size {
+    width: 200px;
+  }
+  
+  img.rating-img {
+    width: 30px;
+    height: 30px;
+    padding-top: 1.7rem;
+  }
+
+}

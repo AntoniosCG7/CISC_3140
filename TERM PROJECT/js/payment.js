@@ -4,6 +4,7 @@ window.addEventListener("load", function () {
   var queryString = window.location.search;
   var urlParams = new URLSearchParams(queryString);
 
+  // Set the field values based on the query parameters
   document.getElementById("orderDate").value = urlParams.get("orderDate");
   document.getElementById("productName").value = urlParams.get("productName");
   document.getElementById("qty").value = urlParams.get("qty");
@@ -16,7 +17,10 @@ window.addEventListener("load", function () {
   document.getElementById("salesTax").value = urlParams.get("salesTax");
   document.getElementById("totalCost").value = urlParams.get("totalCost");
 
+  // Get the selected product
   var product = document.getElementById("productName").value;
+
+  // Set additional field values based on the selected product
   if (product === "World Map Push Pin") {
     document.getElementById("dimensions").value = urlParams
       .get("dimensions")
@@ -32,7 +36,7 @@ window.addEventListener("load", function () {
     document.getElementById("dimensionsCost").value = urlParams.get("sizeCost");
   }
 
-  // Event listener for subButton click
+  // Event listener for submit button click
   document.getElementById("subButton").addEventListener("click", runSubmit);
 
   // Event listener for cardHolder input
@@ -47,12 +51,18 @@ window.addEventListener("load", function () {
   document.getElementById("cvc").addEventListener("input", validateCVC);
 });
 
+/**
+ * Runs the submit validation for the form.
+ */
 function runSubmit() {
   validateName();
   validateNumber();
   validateCVC();
 }
 
+/**
+ * Validates the card holder name input.
+ */
 function validateName() {
   var cardName = document.getElementById("cardHolder");
   if (cardName.validity.valueMissing) {
@@ -62,6 +72,9 @@ function validateName() {
   }
 }
 
+/**
+ * Validates the card number input.
+ */
 function validateNumber() {
   var cardNumber = document.getElementById("cardNumber");
   if (cardNumber.validity.valueMissing) {
@@ -73,6 +86,9 @@ function validateNumber() {
   }
 }
 
+/**
+ * Validates the CVC input.
+ */
 function validateCVC() {
   var cardCVC = document.getElementById("cvc");
   var cvcValue = cardCVC.value;
@@ -83,6 +99,12 @@ function validateCVC() {
   }
 }
 
+/**
+ * Sums the digits of a number string.
+ *
+ * @param {string} numStr - The number string.
+ * @returns {number} The sum of the digits.
+ */
 function sumDigits(numStr) {
   var digitTotal = 0;
   for (var i = 0; i < numStr.length; i++) {
@@ -91,6 +113,12 @@ function sumDigits(numStr) {
   return digitTotal;
 }
 
+/**
+ * Performs the Luhn algorithm to validate a card number.
+ *
+ * @param {string} cardNumber - The card number to validate.
+ * @returns {boolean} Whether the card number is valid.
+ */
 function luhn(cardNumber) {
   var string1 = "";
   var string2 = "";

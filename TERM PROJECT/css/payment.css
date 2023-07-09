@@ -22,7 +22,7 @@
 #form-container {
   font-family: "Oswald", sans-serif;
   margin: 0 auto;
-  padding-top: 2rem;
+  padding-top: 2.2rem;
   padding-bottom: 2rem;
   display: flex;
   justify-content: center;
@@ -206,3 +206,19 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #5acd60;
 }
+
+@media (max-width: 1900px) and (min-height: 600px) {
+  #form-container form {
+    padding-left: 3.6rem;
+    padding-right: 3.6rem;
+  }
+
+  select#shipping-state,
+  select#card-expiry-month,
+  select#card-expiry-year {
+    width: 16.5rem;
+    height: 2.8rem;
+  }
+}
+
+

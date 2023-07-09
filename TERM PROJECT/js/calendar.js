@@ -1,9 +1,19 @@
-// Function to calculate the number of days in a month.
+/**
+ * Calculates the number of days in a month.
+ *
+ * @param {number} month - The month (0-11) for which to calculate the number of days.
+ * @param {number} year - The year for which to calculate the number of days.
+ * @returns {number} The number of days in the specified month and year.
+ */
 function daysInMonth(month, year) {
   return new Date(year, month, 0).getDate();
 }
 
-// Function to write the weekday title rows.
+/**
+ * Writes the weekday title rows for the calendar table.
+ *
+ * @returns {string} The HTML markup for the weekday title rows.
+ */
 function writeWeekdayTitleRows() {
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let row = "<tr class='weekday-row'>";
@@ -14,7 +24,13 @@ function writeWeekdayTitleRows() {
   return row;
 }
 
-// Function to write the daily rows in the calendar table.
+/**
+ * Writes the daily rows in the calendar table for the specified month and year.
+ *
+ * @param {number} month - The month (0-11) for which to generate the daily rows.
+ * @param {number} year - The year for which to generate the daily rows.
+ * @returns {string} The HTML markup for the daily rows in the calendar table.
+ */
 function writeDailyRows(month, year) {
   let firstDay = new Date(year, month).getDay();
   let days = daysInMonth(month + 1, year);
@@ -35,7 +51,7 @@ function writeDailyRows(month, year) {
           today.getMonth() === month &&
           today.getFullYear() === year;
 
-        // Ensuring the date and month are in the 'yyyy-mm-dd' format
+        // Format the date and month in 'yyyy-mm-dd' format
         let formattedMonth = (month + 1).toString().padStart(2, "0");
         let formattedDay = dayCount.toString().padStart(2, "0");
         let eventDate = `${year}-${formattedMonth}-${formattedDay}`;
@@ -57,7 +73,13 @@ function writeDailyRows(month, year) {
   return tableRows;
 }
 
-// Function to write the calendar caption.
+/**
+ * Writes the calendar caption for the specified month and year.
+ *
+ * @param {number} month - The month (0-11) for which to generate the calendar caption.
+ * @param {number} year - The year for which to generate the calendar caption.
+ * @returns {string} The HTML markup for the calendar caption.
+ */
 function writeCalendarCaption(month, year) {
   const monthNames = [
     "January",
@@ -76,7 +98,13 @@ function writeCalendarCaption(month, year) {
   return `<caption>${monthNames[month]} ${year}</caption>`;
 }
 
-// Function to generate the calendar table.
+/**
+ * Generates the calendar table for the specified month and year.
+ *
+ * @param {number} month - The month (0-11) for which to generate the calendar table.
+ * @param {number} year - The year for which to generate the calendar table.
+ * @returns {string} The HTML markup for the calendar table.
+ */
 function generateCalendarTable(month, year) {
   let calendarTable = "<table id='calendarTable'>";
   calendarTable += writeCalendarCaption(month, year);
@@ -86,8 +114,9 @@ function generateCalendarTable(month, year) {
   return calendarTable;
 }
 
-// Add a window.onload event handler to make sure the DOM is fully loaded before we try to manipulate it.
+// Add a window.onload event handler to make sure the DOM is fully loaded before manipulating it.
 window.onload = function () {
+  // Set the innerHTML of the element with id "calendar" to the generated calendar table
   document.getElementById("calendar").innerHTML = generateCalendarTable(
     new Date().getMonth(),
     new Date().getFullYear()
