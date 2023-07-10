@@ -1,124 +1,127 @@
 /* main-container styles */
-
 #main-container {
-  padding-top: 2rem;
+  padding-top: 2rem; /* Adds padding at the top of the main container */
 }
 
 /* gallery styles */
-
 #lightbox {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: none; /* Hides the lightbox by default */
+  position: fixed; /* Positions the lightbox as fixed */
+  z-index: 9999; /* Sets the z-index of the lightbox */
+  left: 0; /* Sets the left position of the lightbox */
+  top: 0; /* Sets the top position of the lightbox */
+  width: 100%; /* Sets the width of the lightbox */
+  height: 100%; /* Sets the height of the lightbox */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Sets the background color of the lightbox */
+  justify-content: center; /* Aligns items horizontally at the center */
+  align-items: center; /* Aligns items vertically at the center */
+  flex-direction: column; /* Sets the flex direction of the lightbox */
 }
 
 #lightbox-image {
-  max-width: 80%;
-  max-height: 70%;
-  object-fit: contain;
+  max-width: 80%; /* Sets the maximum width of the lightbox image */
+  max-height: 70%; /* Sets the maximum height of the lightbox image */
+  object-fit: contain; /* Scales the image while maintaining its aspect ratio */
 }
 
 .thumbnail {
-  width: 300px;
-  height: 200px;
-  margin: 0 10px;
-  margin-bottom: 1.5rem;
-  border-radius: 0.2rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
+  width: 300px; /* Sets the width of the thumbnail */
+  height: 200px; /* Sets the height of the thumbnail */
+  margin: 0 10px; /* Adds margin on the left and right of the thumbnail */
+  margin-bottom: 1.5rem; /* Adds margin at the bottom of the thumbnail */
+  border-radius: 0.2rem; /* Adds a border radius to the thumbnail */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: all 0.2s ease; /* Adds a smooth transition effect */
 }
 
 .thumbnail:hover {
-  transform: scale(0.9);
+  transform: scale(0.9); /* Scales down the thumbnail on hover */
 }
 
 #thumbnail-list {
-  display: flex;
-  margin-top: 1rem;
+  display: flex; /* Displays the thumbnail list as a flex container */
+  margin-top: 1rem; /* Adds margin at the top of the thumbnail list */
 }
 
 #gallery {
-  max-width: 80rem;
-  margin: 0 auto;
+  max-width: 80rem; /* Sets the maximum width of the gallery */
+  margin: 0 auto; /* Centers the gallery horizontally */
 }
 
 #image-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: flex; /* Displays the image list as a flex container */
+  flex-wrap: wrap; /* Allows wrapping of items within the image list */
+  justify-content: space-between; /* Distributes items evenly within the image list with space between them */
 }
 
 /* gear section styles */
-
 #gear-container {
-  max-width: 80rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
+  max-width: 80rem; /* Sets the maximum width of the gear container */
+  margin-top: 1rem; /* Adds margin at the top of the gear container */
+  margin-bottom: 1rem; /* Adds margin at the bottom of the gear container */
+  display: flex; /* Displays the gear container as a flex container */
 }
 
 #left-content {
-  flex-basis: 40%;
+  flex-basis: 40%; /* Sets the flex basis of the left content to 40% */
 }
 
 #right-content {
-  flex-basis: 60%;
-  display: flex;
+  flex-basis: 60%; /* Sets the flex basis of the right content to 60% */
+  display: flex; /* Displays the right content as a flex container */
 }
 
 #gear-container h1 {
-  font-size: 2.3rem;
-  padding: 0.5rem;
+  font-size: 2.3rem; /* Sets the font size of the heading within the gear container */
+  padding: 0.5rem; /* Adds padding around the heading within the gear container */
 }
 
 #gear-container p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
+  font-size: 1.1rem; /* Sets the font size of the paragraph within the gear container */
+  margin-bottom: 2rem; /* Adds margin at the bottom of the paragraph within the gear container */
+  padding: 1rem; /* Adds padding around the paragraph within the gear container */
 }
 
 #gear-container a img {
-  height: 180px;
-  width: 213px;
+  height: 180px; /* Sets the height of the image within the gear container */
+  width: 213px; /* Sets the width of the image within the gear container */
 }
 
 .image-container {
-  margin: 0.3rem;
-  padding: 1rem;
-  border: 4px solid #000000;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
-  transition: all 0.2s ease;
+  margin: 0.3rem; /* Adds margin around the image container */
+  padding: 1rem; /* Adds padding around the image container */
+  border: 4px solid #000000; /* Adds a border to the image container */
+  border-radius: 1rem; /* Adds a border radius to the image container */
+  overflow: hidden; /* Clips the content that exceeds the dimensions of the image container */
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6); /* Adds a box shadow to the image container */
+  transition: all 0.2s ease; /* Adds a smooth transition effect */
 }
 
 .image-container:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Scales up the image container on hover */
 }
 
+/* Responsive styles for thumbnail and gear section */
 @media (max-width: 1900px) and (min-height: 600px) {
   .thumbnail {
-    width: 200px;
-    height: 200px;
+    width: 200px; /* Sets the width of the thumbnail for the specified screen size */
+    height: 200px; /* Sets the height of the thumbnail for the specified screen size */
   }
 
   #gear-container a img {
-    height: 180px;
-    width: 180px;
+    height: 180px; /* Sets the height of the image within the gear container for the specified screen size */
+    width: 180px; /* Sets the width of the image within the gear container for the specified screen size */
   }
 
   .image-container {
-    padding: 0rem;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0rem; /* Resets the padding around the image container for the specified screen size */
+    padding-top: 1rem; /* Adds padding at the top of the image container for the specified screen size */
+    padding-left: 1rem; /* Adds padding at the left of the image container for the specified screen size */
+    padding-right: 1rem; /* Adds padding at the right of the image container for the specified screen size */
   }
 }

@@ -1,6 +1,8 @@
+/* Importing Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
 
+/* Color Variables */
 :root {
   --clr-bg: #fff;
   --clr-header-footer-bg: #222121;
@@ -13,14 +15,16 @@
   --clr-newsletter-bg: #eff1f2;
 }
 
-/* Default styles */
+/* Default Styles */
 
+/* Global Styles */
 * {
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
 }
 
+/* HTML Styles */
 html {
   font-family: "Caprasimo", cursive;
   font-size: 0.7rem;
@@ -29,12 +33,14 @@ html {
   height: 100%;
 }
 
+/* Body Styles */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
 
+/* Heading Styles */
 h1 {
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
@@ -45,6 +51,7 @@ h1 {
   text-align: center;
 }
 
+/* Paragraph Styles */
 p {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -53,6 +60,7 @@ p {
   letter-spacing: 1px;
 }
 
+/* List Styles */
 main li {
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
@@ -60,11 +68,13 @@ main li {
   letter-spacing: 1px;
 }
 
+/* Horizontal Rule Styles */
 hr {
   border-top: 3px solid var(--clr-header-footer-bg);
   margin-top: 1rem;
 }
 
+/* Header and Footer Container Styles */
 #header-container,
 #footer-container {
   margin: 0px auto;
@@ -73,24 +83,28 @@ hr {
   min-width: 15rem;
 }
 
+/* Main Container Styles */
 #main-container {
   padding-top: 5rem;
 }
 
-/* main image styles */
+/* Main Image Styles */
 
+/* Main Image Container */
 .main-image-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
+/* Main Image */
 .main-image {
   height: 71vh;
   filter: blur(2px);
   filter: brightness(75%);
 }
 
+/* Main Image Text */
 .main-image-text {
   position: absolute;
   top: 40%;
@@ -116,8 +130,9 @@ hr {
   margin-bottom: 1.4rem;
 }
 
-/* post-links and post-title styles */
+/* Post Links and Post Title Styles */
 
+/* Post Link Image */
 .post-link img {
   width: 350px;
   height: 350px;
@@ -134,6 +149,7 @@ hr {
   opacity: 0.9;
 }
 
+/* Post Title */
 .post-title {
   font-family: "Caprasimo", cursive;
   font-size: 1rem;
@@ -141,16 +157,18 @@ hr {
   margin-bottom: 1rem;
 }
 
-/* additional-images styles */
+/* Additional Images Styles */
 
+/* Additional Images */
 .additional-images {
   width: 100%;
   height: 100%;
   border-radius: 0.7rem;
 }
 
-/* Newsletter styles */
+/* Newsletter Styles */
 
+/* Newsletter Container */
 #newsletter {
   background-color: #eff1f2;
   padding: 5rem;
@@ -160,16 +178,19 @@ hr {
   border-top: 3px solid var(--clr-header-footer-bg);
 }
 
+/* Newsletter Heading */
 #newsletter h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
+/* Newsletter Paragraph */
 #newsletter p {
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
 }
 
+/* Newsletter Input Field */
 #newsletter input[type="email"] {
   font-family: "Philosopher", sans-serif;
   font-size: 1rem;
@@ -180,6 +201,7 @@ hr {
   margin-right: 0.5rem;
 }
 
+/* Newsletter Submit Button */
 #newsletter button[type="submit"] {
   font-family: "Philosopher", sans-serif;
   font-size: 1rem;

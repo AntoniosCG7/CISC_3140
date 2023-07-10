@@ -1,63 +1,63 @@
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
 
+/* Root variable declarations */
 :root {
-  --clr-bg: #fff;
-  --clr-header-footer-bg: #222121;
-  --clr-header-footer-text: #ffffffe0;
-  --clr-title-text: #fff;
-  --clr-menu-text: #fff;
-  --clr-menu-text-hover: #5ccbd0;
-  --clr-footer-items: #ffffff9f;
-  --clr-home-video-text: #fdfdfdef;
-  --clr-newsletter-bg: #eff1f2;
+  --clr-bg: #fff; /* Background color */
+  --clr-header-footer-bg: #222121; /* Header and footer background color */
+  --clr-header-footer-text: #ffffffe0; /* Header and footer text color */
+  --clr-title-text: #fff; /* Title text color */
+  --clr-menu-text: #fff; /* Menu text color */
+  --clr-menu-text-hover: #5ccbd0; /* Hover color for menu text */
+  --clr-footer-items: #ffffff9f; /* Footer item color */
+  --clr-home-video-text: #fdfdfdef; /* Text color for home video section */
+  --clr-newsletter-bg: #eff1f2; /* Background color for newsletter section */
 }
 
-/* main-container styles */
-
+/* Styles for main container */
 #main-container {
-  padding-top: 3rem;
+  padding-top: 3rem; /* Adds padding at the top of the main container */
 }
 
-/* post-link and post-title styles */
-
+/* Styles for post link and post title */
 .post-link img {
-  width: 400px;
-  height: 350px;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
+  width: 400px; /* Sets the width of the post link image */
+  height: 350px; /* Sets the height of the post link image */
+  margin-top: 3rem; /* Adds margin at the top of the post link image */
+  margin-bottom: 1rem; /* Adds margin at the bottom of the post link image */
+  border-radius: 1rem; /* Adds a border radius to the post link image */
 }
 
 .post-title {
-  font-weight: 500;
-  font-size: 1.3rem;
-  word-spacing: 2px;
-  letter-spacing: 1px;
+  font-weight: 500; /* Sets the font weight of the post title */
+  font-size: 1.3rem; /* Sets the font size of the post title */
+  word-spacing: 2px; /* Sets the spacing between words in the post title */
+  letter-spacing: 1px; /* Sets the spacing between letters in the post title */
 }
 
 /* Category styles */
-
 #destination-categories-container h1 {
-  font-size: 3.5rem;
+  font-size: 3.5rem; /* Sets the font size of the heading within the destination categories container */
 }
 
 #destination-categories {
-  max-width: 80rem;
-  margin: 0 auto;
+  max-width: 80rem; /* Sets the maximum width of the destination categories container */
+  margin: 0 auto; /* Centers the destination categories container horizontally */
 }
 
 .category {
-  max-width: 80rem;
-  margin-bottom: 4rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  max-width: 80rem; /* Sets the maximum width of each category container */
+  margin-bottom: 4rem; /* Adds margin at the bottom of each category container */
+  display: flex; /* Displays the category container as a flex container */
+  flex-wrap: wrap; /* Allows wrapping of items within the category container */
+  justify-content: space-between; /* Distributes items evenly within the category container with space between them */
 }
 
+/* Responsive styles for post link image */
 @media (max-width: 1900px) and (min-height: 600px) {
   .post-link img {
-    width: 260px;
-    height: 260px;
+    width: 260px; /* Sets the width of the post link image for the specified screen size */
+    height: 260px; /* Sets the height of the post link image for the specified screen size */
   }
 }

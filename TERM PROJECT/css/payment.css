@@ -34,8 +34,8 @@
 #form-container form {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-left: 20rem;
-  padding-right: 20rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
   border: 3px solid #d7d7d7;
   border-radius: 1rem;
   background-color: var(--clr-newsletter-bg);
@@ -102,12 +102,8 @@ table#orderDetails td.rightA {
   text-align: right;
 }
 
-.row input:required {
-  background-color: #ffe0e0;
-}
-
-.row input:valid {
-  background-color: #ffffff;
+.empty {
+  background-color: lightyellow;
 }
 
 /* Payment section styles */
@@ -159,7 +155,7 @@ select#card-expiry-month,
 select#card-expiry-year {
   font-family: "Oswald", sans-serif;
   font-size: 0.9rem;
-  width: 11rem;
+  width: 12rem;
   height: 2.6rem;
   border: 2px solid #ccc;
   border-radius: 0.4rem;
@@ -220,5 +216,3 @@ input[type="submit"]:hover {
     height: 2.8rem;
   }
 }
-
-

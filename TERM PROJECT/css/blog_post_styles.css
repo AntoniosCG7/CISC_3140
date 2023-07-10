@@ -1,22 +1,23 @@
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
 
+/* Root variable declarations */
 :root {
-  --clr-bg: #fff;
-  --clr-header-footer-bg: #222121;
-  --clr-header-footer-text: #ffffffe0;
-  --clr-title-text: #fff;
-  --clr-menu-text: #fff;
-  --clr-menu-text-hover: #5ccbd0;
-  --clr-footer-items: #ffffff9f;
-  --clr-home-video-text: #fdfdfdef;
-  --clr-newsletter-bg: #eff1f2;
+  --clr-bg: #fff; /* Background color */
+  --clr-header-footer-bg: #222121; /* Header and footer background color */
+  --clr-header-footer-text: #ffffffe0; /* Header and footer text color */
+  --clr-title-text: #fff; /* Title text color */
+  --clr-menu-text: #fff; /* Menu text color */
+  --clr-menu-text-hover: #5ccbd0; /* Hover color for menu text */
+  --clr-footer-items: #ffffff9f; /* Footer item color */
+  --clr-home-video-text: #fdfdfdef; /* Text color for home video section */
+  --clr-newsletter-bg: #eff1f2; /* Background color for newsletter section */
 }
 
-/* title_image styles */
-
+/* Styles for title image */
 #main-image {
-  margin-top: 3rem;
+  margin-top: 3rem; /* Adds a margin at the top of the title image section */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,24 +25,23 @@
 }
 
 #main-image h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.6);
+  font-size: 2.5rem; /* Sets the font size for the heading in the title image section */
+  margin-bottom: 2rem; /* Adds a margin at the bottom of the heading in the title image section */
+  text-align: center; /* Centers the text within the heading in the title image section */
+  text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.6); /* Adds a text shadow to the heading in the title image section */
 }
 
 #main-image img {
-  width: 800px;
-  height: 800px;
-  border-radius: 1rem;
-  margin-bottom: 3rem;
+  width: 800px; /* Sets the width of the title image */
+  height: 800px; /* Sets the height of the title image */
+  border-radius: 1rem; /* Adds a border radius to the title image */
+  margin-bottom: 3rem; /* Adds a margin at the bottom of the title image */
 }
 
-/* Guide styles */
-
+/* Styles for the guide section */
 #background {
-  border-top: 3px solid #000000;
-  border-bottom: 3px solid #000000;
+  border-top: 3px solid #000000; /* Adds a solid black border to the top of the guide section */
+  border-bottom: 3px solid #000000; /* Adds a solid black border to the bottom of the guide section */
 }
 
 #guide {
@@ -49,90 +49,90 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 80rem;
-  margin: 0 auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  width: 80rem; /* Sets the width of the guide section */
+  margin: 0 auto; /* Centers the guide section horizontally */
+  padding-top: 2rem; /* Adds padding to the top of the guide section */
+  padding-bottom: 2rem; /* Adds padding to the bottom of the guide section */
 }
 
 #guide h1,
 #guide p {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /* Adds a margin at the bottom of headings and paragraphs within the guide section */
 }
 
 #guide h1 {
-  font-size: 2rem;
-  font-weight: 800;
-  text-decoration: underline;
+  font-size: 2rem; /* Sets the font size for headings within the guide section */
+  font-weight: 800; /* Sets the font weight for headings within the guide section */
+  text-decoration: underline; /* Adds an underline decoration to headings within the guide section */
 }
 
 #guide p {
-  font-size: 1.4rem;
-  font-weight: 400;
+  font-size: 1.4rem; /* Sets the font size for paragraphs within the guide section */
+  font-weight: 400; /* Sets the font weight for paragraphs within the guide section */
 }
 
 #guide li {
-  font-size: 1.5rem;
-  font-weight: 800;
-  list-style: lower-alpha;
-  list-style-position: inside;
-  margin-top: 1rem;
+  font-size: 1.5rem; /* Sets the font size for list items within the guide section */
+  font-weight: 800; /* Sets the font weight for list items within the guide section */
+  list-style: lower-alpha; /* Sets the list style to lowercase alphabets */
+  list-style-position: inside; /* Positions the list marker inside the list item */
+  margin-top: 1rem; /* Adds a margin at the top of list items within the guide section */
 }
 
-/* top-rated-hotels styles */
-
+/* Styles for top-rated hotels section */
 #top-rated-hotels {
-  max-width: 80rem;
-  text-align: center;
+  max-width: 80rem; /* Sets the maximum width for the top-rated hotels section */
+  text-align: center; /* Centers the text within the top-rated hotels section */
 }
 
 #top-rated-hotels img {
-  width: 800px;
-  height: 400px;
-  border-radius: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  opacity: 1;
-  cursor: pointer;
-  transition: all 0.2s ease;
+  width: 800px; /* Sets the width of top-rated hotel images */
+  height: 400px; /* Sets the height of top-rated hotel images */
+  border-radius: 1rem; /* Adds a border radius to top-rated hotel images */
+  margin-top: 1rem; /* Adds a margin at the top of top-rated hotel images */
+  margin-bottom: 2rem; /* Adds a margin at the bottom of top-rated hotel images */
+  opacity: 1; /* Sets the initial opacity of top-rated hotel images */
+  cursor: pointer; /* Sets the cursor to a pointer when hovering over top-rated hotel images */
+  transition: all 0.2s ease; /* Adds a smooth transition effect to top-rated hotel images */
 }
 
 #top-rated-hotels img:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
+  transform: scale(
+    1.05
+  ); /* Applies a scale transformation to top-rated hotel images on hover */
+  opacity: 0.9; /* Reduces the opacity of top-rated hotel images on hover */
 }
 
 #top-rated-hotels h2,
 #top-rated-hotels p {
-  text-decoration: none;
-  margin-bottom: 2rem;
+  text-decoration: none; /* Removes the underline decoration from headings and paragraphs within the top-rated hotels section */
+  margin-bottom: 2rem; /* Adds a margin at the bottom of headings and paragraphs within the top-rated hotels section */
 }
 
-/* Travel Rules Styles */
-
+/* Styles for travel rules section */
 #travel-rules {
-  max-width: 80rem;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  max-width: 80rem; /* Sets the maximum width for the travel rules section */
+  margin: 0 auto; /* Centers the travel rules section horizontally */
+  text-align: center; /* Centers the text within the travel rules section */
+  margin-top: 2rem; /* Adds a margin at the top of the travel rules section */
+  margin-bottom: 2rem; /* Adds a margin at the bottom of the travel rules section */
 }
 
 #travel-rules-list {
-  text-align: center;
+  text-align: center; /* Centers the text within the travel rules list */
 }
 
 #travel-rules h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  font-size: 3rem; /* Sets the font size for headings within the travel rules section */
+  font-weight: 500; /* Sets the font weight for headings within the travel rules section */
+  margin-top: 2rem; /* Adds a margin at the top of headings within the travel rules section */
+  margin-bottom: 1rem; /* Adds a margin at the bottom of headings within the travel rules section */
 }
 
 #travel-rules li {
-  font-weight: 400;
-  font-size: 1.5rem;
-  word-spacing: 2px;
-  letter-spacing: 1px;
-  margin-bottom: 1.2rem;
+  font-weight: 400; /* Sets the font weight for list items within the travel rules section */
+  font-size: 1.5rem; /* Sets the font size for list items within the travel rules section */
+  word-spacing: 2px; /* Sets the spacing between words for list items within the travel rules section */
+  letter-spacing: 1px; /* Sets the spacing between letters for list items within the travel rules section */
+  margin-bottom: 1.2rem; /* Adds a margin at the bottom of list items within the travel rules section */
 }

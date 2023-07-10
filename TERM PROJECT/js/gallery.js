@@ -30,10 +30,13 @@ function closeLightbox() {
 
 // Add onclick handlers to all thumbnail images
 for (var i = 0; i < thumbnails.length; i++) {
-  thumbnails[i].onclick = function () {
-    // Open the lightbox with the clicked image and index
-    openLightbox(this.src, i);
-  };
+  // Use an IIFE to capture the value of i at each iteration
+  (function (i) {
+    thumbnails[i].onclick = function () {
+      // Open the lightbox with the clicked image and index
+      openLightbox(this.src, i);
+    };
+  })(i); // Pass the value of i into the IIFE
 }
 
 /**

@@ -1,20 +1,21 @@
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
 
+/* Root variable declarations */
 :root {
-  --clr-bg: #fff;
-  --clr-header-footer-bg: #222121;
-  --clr-header-footer-text: #ffffffe0;
-  --clr-title-text: #fff;
-  --clr-menu-text: #fff;
-  --clr-menu-text-hover: #5ccbd0;
-  --clr-footer-items: #ffffff9f;
-  --clr-home-video-text: #fdfdfdef;
-  --clr-newsletter-bg: #eff1f2;
+  --clr-bg: #fff; /* Background color */
+  --clr-header-footer-bg: #222121; /* Header and footer background color */
+  --clr-header-footer-text: #ffffffe0; /* Header and footer text color */
+  --clr-title-text: #fff; /* Title text color */
+  --clr-menu-text: #fff; /* Menu text color */
+  --clr-menu-text-hover: #5ccbd0; /* Hover color for menu text */
+  --clr-footer-items: #ffffff9f; /* Footer item color */
+  --clr-home-video-text: #fdfdfdef; /* Text color for home video section */
+  --clr-newsletter-bg: #eff1f2; /* Background color for newsletter section */
 }
 
-/* main image styles */
-
+/* Styles for main image */
 #archives-image-container {
   display: flex;
   justify-content: center;
@@ -22,9 +23,9 @@
 }
 
 #archives-main-image {
-  height: 71vh;
-  filter: blur(2px);
-  filter: brightness(65%);
+  height: 71vh; /* Sets the height of the main image */
+  filter: blur(2px); /* Applies a blur effect to the main image */
+  filter: brightness(65%); /* Adjusts the brightness of the main image */
 }
 
 #archives-main-image-text {
@@ -33,160 +34,159 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
+  color: #fff; /* Sets the text color of the main image */
 }
 
 #archives-main-image-text h1 {
-  font-family: "Philosopher", sans-serif;
-  font-size: 6rem;
-  font-weight: 800;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
-  margin-bottom: 1.4rem;
+  font-family: "Philosopher", sans-serif; /* Sets the font family for the heading in the main image */
+  font-size: 6rem; /* Sets the font size for the heading in the main image */
+  font-weight: 800; /* Sets the font weight for the heading in the main image */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Adds a text shadow to the heading in the main image */
+  margin-bottom: 1.4rem; /* Adds a margin at the bottom of the heading in the main image */
 }
 
 #archives-main-image-text p {
-  font-family: "Philosopher", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 800;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  font-family: "Philosopher", sans-serif; /* Sets the font family for the paragraph in the main image */
+  font-size: 1.8rem; /* Sets the font size for the paragraph in the main image */
+  font-weight: 800; /* Sets the font weight for the paragraph in the main image */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Adds a text shadow to the paragraph in the main image */
 }
 
-/* Main container styles */
-
+/* Styles for the main container */
 #main-container {
-  padding-top: 3rem;
+  padding-top: 3rem; /* Adds 3 units of padding to the top of the main container */
 }
 
 #main-container h1 {
-  font-size: 2.2rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.2rem; /* Sets the font size for the heading within the main container */
+  margin-bottom: 1.5rem; /* Adds a margin at the bottom of the heading within the main container */
 }
 
 #main-container ol {
-  font-weight: 400;
-  font-size: 1rem;
-  word-spacing: 1px;
-  letter-spacing: 1px;
+  font-weight: 400; /* Sets the font weight for ordered list elements within the main container */
+  font-size: 1rem; /* Sets the font size for ordered list elements within the main container */
+  word-spacing: 1px; /* Sets the spacing between words for ordered list elements within the main container */
+  letter-spacing: 1px; /* Sets the spacing between letters for ordered list elements within the main container */
 }
 
 #main-container hr {
-  border: 2px solid black;
+  border: 2px solid black; /* Adds a solid black border to horizontal rule elements within the main container */
 }
 
-/* content-titles and content list styles */
-
+/* Styles for content titles and content list */
 #table-of-contents {
-  max-width: 80rem;
-  margin: 0 auto;
+  max-width: 80rem; /* Sets the maximum width for the table of contents */
+  margin: 0 auto; /* Centers the table of contents horizontally */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
 #content-section-container {
-  max-width: 80rem;
+  max-width: 80rem; /* Sets the maximum width for the content section container */
   display: flex;
   flex-wrap: wrap;
-  width: 30%;
+  width: 30%; /* Sets the width for the content section container */
 }
 
 #table-of-contents-image-container {
-  width: 70%;
+  width: 70%; /* Sets the width for the table of contents image container */
 }
 
 #table-of-contents-image-container img {
-  border-radius: 0.7rem;
-  width: 100%;
-  height: 95%;
+  border-radius: 0.7rem; /* Adds a border radius to the table of contents images */
+  width: 100%; /* Sets the width of the table of contents images */
+  height: 95%; /* Sets the height of the table of contents images */
 }
 
 #content-titles {
-  list-style: decimal;
+  list-style: decimal; /* Sets the numbering style for content titles */
 }
 
 #content-titles a {
-  color: #000000;
+  color: #000000; /* Sets the text color for content title links */
 }
 
 #content {
-  list-style: disc;
-  list-style-position: inside;
+  list-style: disc; /* Sets the bullet style for content lists */
+  list-style-position: inside; /* Positions the bullet inside the content list */
 }
 
 #content-titles li,
 #content li {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem; /* Adds a padding at the bottom of content title and content list items */
 }
 
 #content-titles a,
 #content a {
-  color: #000000;
-  font-weight: lighter;
-  transition: all 0.2s ease;
+  color: #000000; /* Sets the text color for content title and content list item links */
+  font-weight: lighter; /* Sets the font weight for content title and content list item links */
+  transition: all 0.2s ease; /* Adds a smooth transition effect for content title and content list item links */
 }
 
 #content-titles,
 #content {
-  padding-left: 1.1rem;
+  padding-left: 1.1rem; /* Adds padding to the left of content titles and content lists */
 }
 
 #content-titles li a:hover,
 #content li a:hover {
-  color: var(--clr-menu-text-hover);
-  padding-left: 10px;
+  color: var(
+    --clr-menu-text-hover
+  ); /* Sets the hover color for content title and content list item links */
+  padding-left: 10px; /* Adds a left padding on hover for content title and content list item links */
 }
 
-/* content-section styles */
-
+/* Styles for content sections */
 .content-section {
-  max-width: 80rem;
-  margin: 0 auto;
-  margin-bottom: 2rem;
+  max-width: 80rem; /* Sets the maximum width for content sections */
+  margin: 0 auto; /* Centers the content sections horizontally */
+  margin-bottom: 2rem; /* Adds a margin at the bottom of content sections */
 }
 
 .content-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem; /* Sets the font size for content section headings */
+  margin-bottom: 1rem; /* Adds a margin at the bottom of content section headings */
 }
 
 .content-section p {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /* Adds a margin at the bottom of paragraphs within content sections */
 }
 
-/* Posts styles */
-
+/* Styles for posts */
 #posts {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  border-top: 3px solid black;
+  margin-top: 4rem; /* Adds a margin at the top of posts */
+  margin-bottom: 4rem; /* Adds a margin at the bottom of posts */
+  border-top: 3px solid black; /* Adds a solid black border to theposts */
 }
 
 #posts h1 {
-  font-size: 2.2rem;
-  margin-top: 2rem;
-  margin-bottom: 0;
-  text-align: center;
+  font-size: 2.2rem; /* Sets the font size for post headings */
+  margin-top: 2rem; /* Adds a margin at the top of post headings */
+  margin-bottom: 0; /* Removes the margin at the bottom of post headings */
+  text-align: center; /* Centers the text within post headings */
 }
 
 #posts-container {
-  max-width: 80rem;
-  margin: 0 auto;
+  max-width: 80rem; /* Sets the maximum width for the posts container */
+  margin: 0 auto; /* Centers the posts container horizontally */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; /* Distributes the posts evenly within the container */
 }
 
 .post-title {
-  font-family: "Oswald", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 1rem;
+  font-family: "Oswald", sans-serif; /* Sets the font family for post titles */
+  font-size: 1rem; /* Sets the font size for post titles */
+  font-weight: 600; /* Sets the font weight for post titles */
+  text-align: center; /* Centers the text within post titles */
+  margin-bottom: 1rem; /* Adds a margin at the bottom of post titles */
 }
 
+/* Media query for posts with specific screen dimensions */
 @media (max-width: 1900px) and (min-height: 600px) {
   .post-link img {
-    width: 260px;
-    height: 260px;
+    width: 260px; /* Sets the width of post images */
+    height: 260px; /* Sets the height of post images */
   }
 }

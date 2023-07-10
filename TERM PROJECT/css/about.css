@@ -1,23 +1,28 @@
+/* Styles for the main container */
 #main-container {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 3rem; /* Adds 3 units of padding to the top */
+  padding-bottom: 3rem; /* Adds 3 units of padding to the bottom */
 }
 
+/* Styles for the about section */
 #about-section {
-  max-width: 80rem;
-  margin: 0 auto;
+  max-width: 80rem; /* Sets the maximum width of the section to 80rem */
+  margin: 0 auto; /* Centers the section horizontally by setting left and right margins to auto */
 }
 
+/* Styles for the heading within the about section */
 #about-section h1 {
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
-  text-align: center;
+  font-size: 2.2rem; /* Sets the font size of the heading to 2.2rem */
+  margin-bottom: 2rem; /* Adds a margin of 2 units at the bottom of the heading */
+  text-align: center; /* Centers the heading text horizontally */
 }
 
+/* Styles for paragraphs within the about section, except the last one */
 #about-section p:not(:last-child) {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem; /* Adds a margin of 2.5 units at the bottom of each paragraph, except the last one */
 }
 
+/* Styles for the last paragraph within the about section */
 #about-section p:last-child {
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.8rem; /* Adds a margin of 1.8 units at the bottom of the last paragraph */
 }

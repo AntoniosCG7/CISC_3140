@@ -15,7 +15,7 @@ function daysInMonth(month, year) {
  * @returns {string} The HTML markup for the weekday title rows.
  */
 function writeWeekdayTitleRows() {
-  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let row = "<tr class='weekday-row'>";
   for (let day of days) {
     row += `<th class='weekday'>${day}</th>`;
@@ -81,7 +81,7 @@ function writeDailyRows(month, year) {
  * @returns {string} The HTML markup for the calendar caption.
  */
 function writeCalendarCaption(month, year) {
-  const monthNames = [
+  var monthNames = [
     "January",
     "February",
     "March",

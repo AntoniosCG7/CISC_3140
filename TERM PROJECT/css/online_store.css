@@ -315,11 +315,10 @@ td.right-side {
   select.size {
     width: 200px;
   }
-  
+
   img.rating-img {
     width: 30px;
     height: 30px;
     padding-top: 1.7rem;
   }
-
 }

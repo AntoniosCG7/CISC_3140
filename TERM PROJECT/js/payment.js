@@ -39,6 +39,32 @@ window.addEventListener("load", function () {
   // Event listener for submit button click
   document.getElementById("subButton").addEventListener("click", runSubmit);
 
+  // Event listener for full name input
+  document
+    .getElementById("full-name")
+    .addEventListener("input", validateFullName);
+
+  // Event listener for phone number input
+  document
+    .getElementById("phone-number")
+    .addEventListener("input", validatePhoneNumber);
+
+  // Event listener for address input
+  document.getElementById("address").addEventListener("input", validateAddress);
+
+  // Event listener for city input
+  document.getElementById("city").addEventListener("input", validateCity);
+
+  // Event listener for state input
+  document
+    .getElementById("shipping-state")
+    .addEventListener("input", validateState);
+
+  // Event listener for shipping ZIP code input
+  document
+    .getElementById("shipping-zip-code")
+    .addEventListener("input", validateShippingZipCode);
+
   // Event listener for cardHolder input
   document.getElementById("cardHolder").addEventListener("input", validateName);
 
@@ -47,17 +73,128 @@ window.addEventListener("load", function () {
     .getElementById("cardNumber")
     .addEventListener("input", validateNumber);
 
+  // Event listener for expiration month and year
+  document
+    .getElementById("card-expiry-month")
+    .addEventListener("change", validateExpiration);
+  document
+    .getElementById("card-expiry-year")
+    .addEventListener("change", validateExpiration);
+
   // Event listener for cvc input
   document.getElementById("cvc").addEventListener("input", validateCVC);
+
+  // Event listener for billing ZIP code input
+  document
+    .getElementById("billing-zip-code")
+    .addEventListener("input", validateBillingZipCode);
+
+  // Add event listener for input fields
+  var inputFields = document.querySelectorAll(
+    "input[required], select[required]"
+  );
+  inputFields.forEach(function (input) {
+    input.addEventListener("input", function () {
+      if (input.value.trim() !== "") {
+        input.classList.remove("empty");
+      } else {
+        input.classList.add("empty");
+      }
+    });
+  });
 });
 
 /**
  * Runs the submit validation for the form.
  */
 function runSubmit() {
+  validateFullName();
+  validatePhoneNumber();
+  validateAddress();
+  validateCity();
+  validateState();
+  validateShippingZipCode();
   validateName();
   validateNumber();
+  validateExpiration();
   validateCVC();
+  validateBillingZipCode();
+}
+
+/**
+ * Validates the full name input.
+ */
+function validateFullName() {
+  var fullName = document.getElementById("full-name");
+  if (fullName.validity.valueMissing) {
+    fullName.setCustomValidity("Please enter your full name.");
+  } else {
+    fullName.setCustomValidity("");
+  }
+}
+
+/**
+ * Validates the phone number input.
+ */
+function validatePhoneNumber() {
+  var phoneNumber = document.getElementById("phone-number");
+  if (phoneNumber.validity.valueMissing) {
+    phoneNumber.setCustomValidity("Please enter your phone number.");
+  } else if (phoneNumber.validity.patternMismatch) {
+    phoneNumber.setCustomValidity(
+      "Please enter a valid phone number (10 digits)."
+    );
+  } else {
+    phoneNumber.setCustomValidity("");
+  }
+}
+
+/**
+ * Validates the address input.
+ */
+function validateAddress() {
+  var address = document.getElementById("address");
+  if (address.validity.valueMissing) {
+    address.setCustomValidity("Please enter your address.");
+  } else {
+    address.setCustomValidity("");
+  }
+}
+
+/**
+ * Validates the city input.
+ */
+function validateCity() {
+  var city = document.getElementById("city");
+  if (city.validity.valueMissing) {
+    city.setCustomValidity("Please enter your city.");
+  } else {
+    city.setCustomValidity("");
+  }
+}
+
+/**
+ * Validates the state input.
+ */
+function validateState() {
+  var state = document.getElementById("shipping-state");
+  if (state.validity.valueMissing) {
+    state.setCustomValidity("Please select your state.");
+  } else {
+    state.setCustomValidity("");
+  }
+}
+
+/**
+ * Validates the shipping ZIP code input.
+ */
+function validateShippingZipCode() {
+  var zipCode = document.getElementById("shipping-zip-code");
+  if (zipCode.validity.valueMissing) {
+    zipCode.setCustomValidity("Please enter your ZIP code for shipping.");
+  } else {
+    zipCode.setCustomValidity("");
+  }
 }
 
 /**
@@ -87,6 +224,21 @@ function validateNumber() {
 }
 
 /**
+ * Validates the expiration month and year inputs.
+ */
+function validateExpiration() {
+  var monthSelect = document.getElementById("card-expiry-month");
+  var yearSelect = document.getElementById("card-expiry-year");
+
+  // Check if both the month and year are selected
+  if (monthSelect.value === "" || yearSelect.value === "") {
+    monthSelect.setCustomValidity("Select both the expiration month and year");
+  } else {
+    monthSelect.setCustomValidity("");
+  }
+}
+
+/**
  * Validates the CVC input.
  */
 function validateCVC() {
@@ -96,6 +248,18 @@ function validateCVC() {
     cardCVC.setCustomValidity("Invalid CVC");
   } else {
     cardCVC.setCustomValidity("");
+  }
+}
+
+/**
+ * Validates the billing ZIP code input.
+ */
+function validateBillingZipCode() {
+  var zipCode = document.getElementById("billing-zip-code");
+  if (zipCode.validity.valueMissing) {
+    zipCode.setCustomValidity("Please enter your ZIP code for billing.");
+  } else {
+    zipCode.setCustomValidity("");
   }
 }
 

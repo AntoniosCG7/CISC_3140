@@ -1,64 +1,66 @@
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 
+/* Root variable declarations */
 :root {
-  --clr-bg: #fff;
-  --clr-header-footer-bg: #222121;
-  --clr-header-footer-text: #ffffffe0;
-  --clr-title-text: #fff;
-  --clr-menu-text: #fff;
-  --clr-menu-text-hover: #5ccbd0;
-  --clr-footer-items: #ffffff9f;
-  --clr-home-video-text: #fdfdfdef;
-  --clr-newsletter-bg: #eff1f2;
+  --clr-bg: #fff; /* Background color */
+  --clr-header-footer-bg: #222121; /* Header and footer background color */
+  --clr-header-footer-text: #ffffffe0; /* Header and footer text color */
+  --clr-title-text: #fff; /* Title text color */
+  --clr-menu-text: #fff; /* Menu text color */
+  --clr-menu-text-hover: #5ccbd0; /* Hover color for menu text */
+  --clr-footer-items: #ffffff9f; /* Footer item color */
+  --clr-home-video-text: #fdfdfdef; /* Text color for home video section */
+  --clr-newsletter-bg: #eff1f2; /* Background color for newsletter section */
 }
 
-/* main-container styles */
-
+/* Styles for main container */
 #main-container {
-  padding-top: 3rem;
+  padding-top: 3rem; /* Adds padding at the top of the main container */
 }
 
-/* contact-text-container styles */
-
+/* Styles for contact text container */
 #contact-text-container {
-  max-width: 80rem;
-  margin: 0 auto;
+  max-width: 80rem; /* Sets the maximum width of the contact text container */
+  margin: 0 auto; /* Centers the contact text container horizontally */
 }
 
 #contact-text-container h1 {
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
-  text-align: center;
+  font-size: 2.2rem; /* Sets the font size of the heading within the contact text container */
+  margin-bottom: 2rem; /* Adds margin at the bottom of the heading within the contact text container */
+  text-align: center; /* Centers the text within the contact text container */
 }
 
 #contact-text-container p:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; /* Adds margin at the bottom of paragraphs within the contact text container, except for the last paragraph */
 }
 
-/* Form Layout Styles */
-
+/* Styles for contact form container */
 #contact-form-container {
-  max-width: 80rem;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 2rem;
+  max-width: 80rem; /* Sets the maximum width of the contact form container */
+  margin: 0 auto; /* Centers the contact form container horizontally */
+  text-align: center; /* Centers the text within the contact form container */
+  padding-top: 2rem; /* Adds padding at the top of the contact form container */
 }
 
+/* Styles for contact form */
 #contact-form {
-  font-family: "Oswald", sans-serif;
-  font-size: 1.1rem;
+  font-family: "Oswald", sans-serif; /* Sets the font family for the contact form */
+  font-size: 1.1rem; /* Sets the font size for the contact form */
   display: block;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 20rem;
-  padding-right: 20rem;
-  border: 3px solid #d7d7d7;
-  border-radius: 1rem;
-  background-color: var(--clr-newsletter-bg);
+  padding-top: 2rem; /* Adds padding at the top of the contact form */
+  padding-bottom: 2rem; /* Adds padding at the bottom of the contact form */
+  padding-left: 20rem; /* Adds padding at the left of the contact form */
+  padding-right: 20rem; /* Adds padding at the right of the contact form */
+  border: 3px solid #d7d7d7; /* Adds a solid border to the contact form */
+  border-radius: 1rem; /* Adds a border radius to the contact form */
+  background-color: var(
+    --clr-newsletter-bg
+  ); /* Sets the background color of the contact form */
   box-shadow: rgb(47, 47, 47) 0px 0px 1px, rgb(47, 47, 47) 0px 0px 5px,
-    rgb(47, 47, 47) 0px 0px 10px, rgb(47, 47, 47) 0px 0px 20px;
+    rgb(47, 47, 47) 0px 0px 10px, rgb(47, 47, 47) 0px 0px 20px; /* Adds a box shadow to the contact form */
 }
 
 legend {
@@ -66,18 +68,18 @@ legend {
   font-size: 1.8rem;
   font-weight: 800;
   text-decoration: underline;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem; /* Adds margin at the bottom of the legend */
 }
 
 .form-row {
-  margin-bottom: 1.3rem;
-  text-align: center;
+  margin-bottom: 1.3rem; /* Adds margin at the bottom of form rows */
+  text-align: center; /* Centers the text within form rows */
 }
 
 label {
   display: block;
-  font-weight: bold;
-  margin-bottom: 0.7rem;
+  font-weight: bold; /* Sets the font weight for labels */
+  margin-bottom: 0.7rem; /* Adds margin at the bottom of labels */
 }
 
 input[type="text"],
@@ -85,105 +87,117 @@ input[type="email"],
 input[type="tel"],
 select,
 textarea {
-  width: 25rem;
-  padding: 1rem;
-  border: 2px solid #ccc;
-  border-radius: 0.4rem;
+  width: 25rem; /* Sets the width of input fields, select elements, and textarea */
+  padding: 1rem; /* Adds padding to input fields, select elements, and textarea */
+  border: 2px solid #ccc; /* Adds a solid border to input fields, select elements, and textarea */
+  border-radius: 0.4rem; /* Adds a border radius to input fields, select elements, and textarea */
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-  font-family: "Philosopher", sans-serif;
+  font-family: "Philosopher", sans-serif; /* Sets the font family for input fields and textarea */
 }
 
 select {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif; /* Sets the font family for select elements */
 }
 
 input[type="checkbox"] {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /* Adds margin at the bottom of checkboxes */
 }
 
 input[type="submit"],
 input[type="reset"] {
-  color: white;
-  cursor: pointer;
-  padding: 1rem 4rem;
-  border: none;
-  border-radius: 0.3rem;
-  font-weight: bold;
+  color: white; /* Sets the text color of submit and reset buttons to white */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over submit and reset buttons */
+  padding: 1rem 4rem; /* Adds padding to submit and reset buttons */
+  border: none; /* Removes the border from submit and reset buttons */
+  border-radius: 0.3rem; /* Adds a border radius to submit and reset buttons */
+  font-weight: bold; /* Sets the font weight of submit and reset buttons to bold */
 }
 
 input[type="submit"] {
-  background-color: #439a46;
+  background-color: #439a46; /* Sets the background color of the submit button */
 }
 
 input[type="submit"]:hover {
-  background-color: #5acd60;
+  background-color: #5acd60; /* Sets the background color of the submit button on hover */
 }
 
 input[type="reset"] {
-  background-color: #782121;
+  background-color: #782121; /* Sets the background color of the reset button */
 }
 
 input[type="reset"]:hover {
-  background-color: #ff0303;
+  background-color: #ff0303; /* Sets the background color of the reset button on hover */
 }
 
 /* Validation Styles */
 
 textarea:focus {
-  background-color: rgb(220, 255, 220);
+  background-color: rgb(
+    220,
+    255,
+    220
+  ); /* Sets the background color of the textarea on focus */
 }
 
 #name:focus:valid,
 #email:focus:valid,
 #phone:focus:valid {
-  background-color: rgb(220, 255, 220);
-  background-image: url(../img/valid.png);
-  background-position: center right;
-  background-repeat: no-repeat;
+  background-color: rgb(
+    220,
+    255,
+    220
+  ); /* Sets the background color of valid input fields on focus */
+  background-image: url(../img/valid.png); /* Sets a background image for valid input fields */
+  background-position: center right; /* Sets the background image position for valid input fields */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
 }
 
 #name:focus:invalid,
 #email:focus:invalid,
 #phone:focus:invalid {
-  background-color: rgb(255, 232, 233);
-  background-image: url(../img/invalid.png);
-  background-position: center right;
-  background-repeat: no-repeat;
+  background-color: rgb(
+    255,
+    232,
+    233
+  ); /* Sets the background color of invalid input fields on focus */
+  background-image: url(../img/invalid.png); /* Sets a background image for invalid input fields */
+  background-position: center right; /* Sets the background image position for invalid input fields */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
 }
 
-/* faq section styles */
+/* FAQ section styles */
 
 #faq-container {
-  max-width: 80rem;
-  margin: 0 auto;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  max-width: 80rem; /* Sets the maximum width of the FAQ container */
+  margin: 0 auto; /* Centers the FAQ container horizontally */
+  padding-top: 2rem; /* Adds padding at the top of the FAQ container */
+  padding-bottom: 1rem; /* Adds padding at the bottom of the FAQ container */
 }
 
 #faq-container > h1 {
-  font-size: 1.8rem;
-  margin-bottom: 1.8rem;
+  font-size: 1.8rem; /* Sets the font size of the heading within the FAQ container */
+  margin-bottom: 1.8rem; /* Adds margin at the bottom of the heading within the FAQ container */
 }
 
 .faq {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.6rem; /* Adds margin at the bottom of each FAQ section */
 }
 
 .faq h1 {
-  text-align: start;
-  font-size: 1.4rem;
-  text-shadow: none;
+  text-align: start; /* Aligns the text within each FAQ section to the start (left) */
+  font-size: 1.4rem; /* Sets the font size of the heading within each FAQ section */
+  text-shadow: none; /* Removes the text shadow from the heading within each FAQ section */
 }
 
 .question {
-  font-weight: bold;
+  font-weight: bold; /* Sets the font weight of the question within each FAQ section */
 }
 
 .answer {
-  margin-top: 0.5rem;
+  margin-top: 0.5rem; /* Adds margin at the top of the answer within each FAQ section */
 }

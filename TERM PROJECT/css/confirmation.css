@@ -1,35 +1,39 @@
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
 
+/* Root variable declarations */
 :root {
-  --clr-bg: #fff;
-  --clr-header-footer-bg: #222121;
-  --clr-header-footer-text: #ffffffe0;
-  --clr-title-text: #fff;
-  --clr-menu-text: #fff;
-  --clr-menu-text-hover: #5ccbd0;
-  --clr-footer-items: #ffffff9f;
-  --clr-home-video-text: #fdfdfdef;
-  --clr-newsletter-bg: #eff1f2;
+  --clr-bg: #fff; /* Background color */
+  --clr-header-footer-bg: #222121; /* Header and footer background color */
+  --clr-header-footer-text: #ffffffe0; /* Header and footer text color */
+  --clr-title-text: #fff; /* Title text color */
+  --clr-menu-text: #fff; /* Menu text color */
+  --clr-menu-text-hover: #5ccbd0; /* Hover color for menu text */
+  --clr-footer-items: #ffffff9f; /* Footer item color */
+  --clr-home-video-text: #fdfdfdef; /* Text color for home video section */
+  --clr-newsletter-bg: #eff1f2; /* Background color for newsletter section */
 }
 
+/* Styles for main container */
 #main-container {
-  padding-top: 10rem;
+  padding-top: 10rem; /* Adds padding at the top of the main container */
 }
 
+/* Styles for order confirmation section */
 #order-confirmation {
-  font-family: "Oswald", sans-serif;
-  max-width: 80rem;
-  margin: 0 auto;
+  font-family: "Oswald", sans-serif; /* Sets the font family for the order confirmation section */
+  max-width: 80rem; /* Sets the maximum width of the order confirmation section */
+  margin: 0 auto; /* Centers the order confirmation section horizontally */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: start;
-  padding-bottom: 4rem;
+  flex-direction: column; /* Displays the contents of the order confirmation section in a column */
+  justify-content: center; /* Centers the content vertically within the order confirmation section */
+  text-align: start; /* Aligns the text to the start (left) within the order confirmation section */
+  padding-bottom: 4rem; /* Adds padding at the bottom of the order confirmation section */
 }
 
 #order-confirmation h1 {
-  text-align: center;
-  text-decoration: underline;
-  padding-bottom: 2rem;
+  text-align: center; /* Centers the heading within the order confirmation section */
+  text-decoration: underline; /* Adds an underline decoration to the heading */
+  padding-bottom: 2rem; /* Adds padding at the bottom of the heading */
 }

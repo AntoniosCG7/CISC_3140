@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Online Store &#8226 Traveler's Trails</title>
+	<link rel="stylesheet" href="/TERM PROJECT/css/reset.css">
+	<link rel="stylesheet" href="/TERM PROJECT/css/header-footer.css">
+	<link rel="stylesheet" href="/TERM PROJECT/css/main_template.css">
+	<link rel="stylesheet" href="/TERM PROJECT/css/online_store.css">
+	<link rel="shortcut icon" href="/TERM PROJECT/img/beach.png" type="image/x-icon">
+</head>
+
+<body>
+	<header>
+		<div class="login-form">
+			<label for="username" id="username-label">Username:</label>
+			<input type="text" id="username" placeholder="Enter your username...">
+			<label for="password" id="password-label">Password:</label>
+			<input type="password" id="password" placeholder="Enter your password...">
+			<button onclick="login()" id="login-button">LOGIN</button>
+			<h1 id="welcome">
+			</h1>
+		</div>
+		<div id="header-container">
+			<h1>
+				<img id="website-logo" src="/TERM PROJECT/img/beach.png" alt="App-Icon">
+				<a id="website-title" href="/TERM PROJECT/html/index.html">Traveler's Trails</a>
+			</h1>
+			<nav id="menu">
+				<ul id="menu-items">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="destinations.html">DESTINATIONS</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="online_store.html">ONLINE STORE</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="main-image-container">
+			<img src="/TERM PROJECT/img/store2.jpg" alt="main image" class="main-image">
+			<div class="main-image-text">
+				<h1>ONLINE STORE</h1>
+				<p>Choose a destination and embark on an adventure of exploration.</p>
+			</div>
+		</div>
+
+		<div id="main-container">
+			<h1>My Products</h1>
+			<div id="productIcons-container">
+				<div class="product-link">
+					<div class="image-container" onclick="location.href = '#product1';" target="_blank">
+						<img src="../img/world-map.jpg" alt="World Map Push Pin">
+						<p class="product-title">World Map Push Pin</p>
+						<br>
+						<p class="product-title">$89.99+</p>
+						<img src="../img/rating.png" alt="rating" class="rating">
+					</div>
+				</div>
+				<div class="product-link">
+					<div class="image-container" onclick="location.href = '#product2';" target="_blank">
+						<img src="../img/t-shirt.jpg" alt="Traveler Shirt">
+						<p class="product-title">Traveler Shirt</p>
+						<br>
+						<p class="product-title">$14.99</p>
+						<img src="../img/rating.png" alt="rating" class="rating">
+					</div>
+				</div>
+				<div class="product-link">
+					<div class="image-container" onclick="location.href = '#product3';" target="_blank">
+						<img src="../img/travel-journal.jpg" alt="Travel Journal">
+						<p class="product-title">Travel Journal</p>
+						<br>
+						<p class="product-title">$29.99</p>
+						<img src="../img/rating.png" alt="rating" class="rating">
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="product" id="product1">
+				<div class="product-description">
+					<div class="left-column">
+						<h2 class="product-title">World Map Push Pin</h2>
+						<h2 class="product-title">by <a href="#" class="product-maker">Traveler's Trails</a></h2>
+						<h2 class="customer-rating">Customer Rating (3,857 votes): <img src="../img/customer-rating.png"
+								alt="customer rating" class="rating-img"></h2>
+						<div class="product-description-image-container">
+							<img src="../img/world-map.jpg" alt="world map" class="product-description-image">
+						</div>
+					</div>
+					<div class="right-column">
+						<h2 class="details">Product Details</h2>
+						<p class="details">
+							Introducing our personalized farmhouse push pin world map. With unparalleled detail and up
+							to 2,500
+							cities, it's the most comprehensive travel map available. Exclusive designs, perfect for
+							gifting. Track
+							your travels and showcase your adventures. Handmade in the USA with 1,000 colorful pins
+							included. Embark
+							on a unique journey with our exceptional push pin map.
+						</p>
+						<form class="orderForm" name="orderForm" action="/TERM PROJECT/html/payment.html" method="get">
+							<table class="orderTable">
+								<caption>Product Order</caption>
+								<tr>
+									<td>
+										<input type="text" class="orderDate" name="orderDate" readonly />
+									</td>
+									<td>
+										<input type="hidden" id="productName" name="productName"
+											value="World Map Push Pin" />
+									</td>
+								</tr>
+								<tr>
+									<td class="type-selection">
+										<label for="item-type">Item Type: </label>
+										<select name="item-type" class="item-type">
+											<option disabled selected>Select the item type</option>
+											<option value="89.99, Unframed Foam Board ($89.99)" selected>Unframed Foam
+												Board ($89.99)
+											</option>
+											<option value="119.99, Wrapped Canvas ($119.99)">Wrapped Canvas ($119.99)
+											</option>
+											<option value="139.99, Framed Foam Board ($139.99)">Framed Foam Board
+												($139.99)</option>
+										</select>
+									</td>
+									<td class="right-side">
+										<label for="qty">Qty</label>
+										<select name="qty" class="qty">
+											<option value="1" selected>1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+									<td>
+										<input type="text" name="initialCost" class="initialCost" size="10" readonly />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="type-selection">
+										<label for="dimensions">Dimensions: </label>
+										<select name="dimensions" class="dimensions">
+											<option disabled selected>Select the item type</option>
+											<option value="0, 18x24" selected>18x24</option>
+											<option value="15.99, 24x36 (+ $15.99)">24x36 (+ $15.99)</option>
+											<option value="29.99, 36x48 (+ $29.99)">36x48 (+ $29.99)</option>
+										</select>
+									</td>
+									<td>
+										<input type="text" name="dimensionsCost" class="dimensionsCost" size="10"
+											readonly />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="right-side">Subtotal</td>
+									<td class="outcell">
+										<input type="text" name="subtotal" class="subtotal" size="10" readonly />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="right-side">Tax (8%)</td>
+									<td>
+										<input type="text" name="salesTax" class="salesTax" size="10" readonly />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="right-side">TOTAL</td>
+									<td>
+										<input type="text" name="totalCost" class="totalCost" size="10" readonly />
+									</td>
+								</tr>
+							</table>
+							<input type="submit" id="addToCartBtn" class="addToCartBtn" value="ADD TO CART" />
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="product" id="product2">
+				<div class="product-description">
+					<div class="left-column">
+						<h2 class="product-title">World Map Shirt</h2>
+						<h2 class="product-title">by <a href="#" class="product-maker">Traveler's Trails</a></h2>
+						<h2 class="customer-rating">Customer Rating (1,423 votes): <img src="../img/customer-rating.png"
+								alt="customer rating" class="rating-img"></h2>
+						<div class="product-description-image-container">
+							<img src="../img/t-shirt.jpg" alt="shirt" class="product-description-image">
+						</div>
+					</div>
+					<div class="right-column">
+						<h2 class="details">Product Details</h2>
+						<p class="details">
+							Introducing the World Map Shirt, a wearable ode to exploration and the beauty of our planet.
+							This unique shirt features
+							a meticulously detailed map of the world, showcasing continents. Crafted with comfort and
+							style in mind, it's made from high-quality fabric that feels soft against your skin while
+							ensuring durability.
+						</p>
+						<form class="orderForm" name="orderForm" action="/TERM PROJECT/html/payment.html" method="get">
+							<table class="orderTable">
+								<caption>Product Order</caption>
+								<tr>
+									<td>
+										<input type="text" class="orderDate" name="orderDate" readonly />
+									</td>
+									<td>
+										<input type="hidden" id="productName" name="productName"
+											value="World Map Shirt" />
+									</td>
+								</tr>
+								<tr>
+									<td class="type-selection">
+										<label for="item-type">Color: </label>
+										<select name="item-type" class="item-type">
+											<option disabled selected>Select a color</option>
+											<option value="14.99, Black ($14.99)" selected>Black ($14.99)</option>
+											<option value="14.99, White ($14.99)">White ($14.99)</option>
+											<option value="14.99, Pink ($14.99)">Pink ($14.99)</option>
+											<option value="14.99, Red ($14.99)">Red ($14.99)</option>
+											<option value="14.99, Purple ($14.99)">Purple ($14.99)</option>
+											<option value="14.99, Yellow ($14.99)">Yellow ($14.99)</option>
+											<option value="14.99, Orange ($14.99)">Orange ($14.99)</option>
+										</select>
+									</td>
+									<td class="right-side">
+										<label for="qty">Qty</label>
+										<select name="qty" class="qty">
+											<option value="1" selected>1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+									<td>
+										<input type="text" name="initialCost" class="initialCost" size="10" readonly />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="type-selection">
+										<label for="size">Size: </label>
+										<select name="size" class="size">
+											<option disabled selected>Select a size</option>
+											<option value="0, Unisex-XS (+ $0)" selected>Unisex-XS (+ $0)</option>
+											<option value="0, Unisex-S (+ $0)">Unisex-S (+ $0)</option>
+											<option value="0, Unisex-M (+ $0)">Unisex-M (+ $0)</option>
+											<option value="0.99, Unisex-L (+ $0.99)">Unisex-L (+ $0.99)</option>
+											<option value="1.99, Unisex-XL (+ $1.99)">Unisex-XL (+ $1.99)</option>
+											<option value="2.99, Unisex-2XL (+ $2.99)">Unisex-2XL (+ $2.99)</option>
+											<option value="2.99, Unisex-3XL (+ $2.99)">Unisex-3XL (+ $2.99)</option>
+										</select>
+									</td>
+									<td>
+										<input type="text" name="sizeCost" class="sizeCost" size="10" readonly />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="right-side">Subtotal</td>
+									<td class="outcell">
+										<input type="text" name="subtotal" class="subtotal" size="10" readonly />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="right-side">Tax (8%)</td>
+									<td>
+										<input type="text" name="salesTax" class="salesTax" size="10" readonly />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="right-side">TOTAL</td>
+									<td>
+										<input type="text" name="totalCost" class="totalCost" size="10" readonly />
+									</td>
+								</tr>
+							</table>
+							<input type="submit" class="addToCartBtn" value="ADD TO CART" />
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="product" id="product3">
+				<div class="product-description">
+					<div class="left-column">
+						<h2 class="product-title">Personalized Travel Journal</h2>
+						<h2 class="product-title">by <a href="#" class="product-maker">Traveler's Trails</a></h2>
+						<h2 class="customer-rating">Customer Rating (2,322 votes): <img src="../img/customer-rating.png"
+								alt="customer rating" class="rating-img"></h2>
+						<div class="product-description-image-container">
+							<img src="../img/travel-journal.jpg" alt="travel journal" class="product-description-image">
+						</div>
+					</div>
+					<div class="right-column">
+						<h2 class="details">Product Details</h2>
+						<p class="details">
+							The personalized travel journal aids in effectively planning and arranging your journey. It
+							is
+							tailored with your name, and
+							with the aid of this special notebook for adventurous couples, you can document distinct
+							encounters and share various
+							perspectives you encountered along the way.
+						</p>
+						<form class="orderForm" name="orderForm" action="/TERM PROJECT/html/payment.html" method="get">
+							<table class="orderTable">
+								<caption>Product Order</caption>
+								<tr>
+									<td>
+										<input type="text" class="orderDate" name="orderDate" readonly />
+									</td>
+									<td>
+										<input type="hidden" id="productName" name="productName"
+											value="Personalized Travel Journal" />
+									</td>
+								</tr>
+								<tr>
+									<td class="type-selection">
+										<label for="item-type">Cover Color: </label>
+										<select name="item-type" class="item-type">
+											<option disabled selected>Select cover color</option>
+											<option value="29.99, PeaCoat ($29.99)" selected>PeaCoat ($29.99)</option>
+											<option value="29.99, Blue ($29.99)">Blue ($29.99)</option>
+											<option value="29.99, Grey ($29.99)">Grey ($29.99)</option>
+											<option value="29.99, Green ($29.99)">Green ($29.99)</option>
+										</select>
+									</td>
+									<td class="right-side">
+										<label for="qty">Qty</label>
+										<select name="qty" class="qty">
+											<option value="1" selected>1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+									<td>
+										<input type="text" name="initialCost" class="initialCost" size="10" readonly />
+									</td>
+								</tr>
+								<tr>
+								</tr>
+								<tr>
+									<td colspan="2" class="right-side">Subtotal</td>
+									<td class="outcell">
+										<input type="text" name="subtotal" class="subtotal" size="10" readonly />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="right-side">Tax (8%)</td>
+									<td>
+										<input type="text" name="salesTax" class="salesTax" size="10" readonly />
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="right-side">TOTAL</td>
+									<td>
+										<input type="text" name="totalCost" class="totalCost" size="10" readonly />
+									</td>
+								</tr>
+							</table>
+							<input type="submit" class="addToCartBtn" value="ADD TO CART" />
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div id="newsletter">
+				<h2>Newsletter</h2>
+				<p>Stay up-to-date with the latest travel inspiration, tips, and exclusive offers!</p>
+				<form action="newsletter-action-url">
+					<input type="email" name="email" placeholder="Your email address..." required>
+					<button type="submit">SUBSCRIBE</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div id="footer-container">
+			<div class="footer-row">
+				<div class="footer-column">
+					<h1>ABOUT</h1>
+					<ul>
+						<li><a href="/TERM PROJECT/html/about.html">About Traveler's Trails</a></li>
+						<li><a href="#">Affiliate Disclosures</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms Of Use</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h1>HELP</h1>
+					<ul>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Merchandising License</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h1>CONTACT</h1>
+					<div id="contact">
+						<a href="mailto:t_trails@gmail.com"><img src="/TERM PROJECT/img/mail.png" alt="mail:"></a>
+						<a href="tel:+13439868404"><img src="/TERM PROJECT/img/smartphone.png" alt="mobile:"></a>
+					</div>
+				</div>
+				<div class="footer-column">
+					<h1>FOLLOW ME</h1>
+					<div id="social-media">
+						<a href="https://www.youtube.com/" target="_blank"><img src="/TERM PROJECT/img/youtube.png"
+								alt="youtube-link"></a>
+						<a href="https://twitter.com/" target="_blank"><img src="/TERM PROJECT/img/twitter.png"
+								alt="twitter-link"></a>
+						<a href="https://www.instagram.com/" target="_blank"><img src="/TERM PROJECT/img/instagram.png"
+								alt="instagram-link"></a>
+						<a href="https://www.facebook.com/" target="_blank"><img src="/TERM PROJECT/img/facebook.png"
+								alt="facebook-link"></a>
+					</div>
+				</div>
+			</div>
+			<br>
+			<hr id="solid-line-divider">
+			<div id="footer-copyright">
+				<p>&copy; Traveler's Trails 2023. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="/TERM PROJECT/js/login.js"></script>
+	<script src="/TERM PROJECT/js/order.js"></script>
+</body>
+
+</html>

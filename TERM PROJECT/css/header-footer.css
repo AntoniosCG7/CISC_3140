@@ -1,40 +1,43 @@
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
 
+/* Root variable declarations */
 :root {
-  --clr-bg: #fff;
-  --clr-header-footer-bg: #222121;
-  --clr-header-footer-text: #ffffffe0;
-  --clr-title-text: #fff;
-  --clr-menu-text: #fff;
-  --clr-menu-text-hover: #5ccbd0;
-  --clr-footer-items: #ffffff9f;
-  --clr-home-video-text: #fdfdfdef;
-  --clr-newsletter-bg: #eff1f2;
+  --clr-bg: #fff; /* Background color */
+  --clr-header-footer-bg: #222121; /* Header and footer background color */
+  --clr-header-footer-text: #ffffffe0; /* Header and footer text color */
+  --clr-title-text: #fff; /* Title text color */
+  --clr-menu-text: #fff; /* Menu text color */
+  --clr-menu-text-hover: #5ccbd0; /* Hover color for menu text */
+  --clr-footer-items: #ffffff9f; /* Footer item color */
+  --clr-home-video-text: #fdfdfdef; /* Text color for home video section */
+  --clr-newsletter-bg: #eff1f2; /* Background color for newsletter section */
 }
 
 /* Header styles */
-
 header {
   font-family: "Caprasimo", cursive;
-  background-color: var(--clr-header-footer-bg);
+  background-color: var(
+    --clr-header-footer-bg
+  ); /* Sets the background color of the header */
   width: 100%;
-  position: fixed;
-  z-index: 100;
+  position: fixed; /* Fixes the position of the header */
+  z-index: 100; /* Sets the z-index of the header */
 }
 
 #header-container {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex; /* Displays the header container as a flex container */
+  align-items: center; /* Aligns items vertically at the center */
+  justify-content: space-between; /* Distributes items evenly along the horizontal axis */
 }
 
 #website-title {
   font-family: "Caprasimo", cursive;
   font-size: 2.5rem;
-  color: var(--clr-title-text);
+  color: var(--clr-title-text); /* Sets the color of the website title */
 }
 
 #website-logo {
@@ -44,7 +47,7 @@ header {
 }
 
 #menu-items li {
-  display: contents;
+  display: contents; /* Allows the menu items to behave as individual items */
 }
 
 #menu-items li a {
@@ -58,32 +61,37 @@ header {
 }
 
 #menu-items li a:hover {
-  color: var(--clr-menu-text-hover);
+  color: var(
+    --clr-menu-text-hover
+  ); /* Sets the color of the menu items on hover */
 }
 
 #menu-items li a::after {
   content: "";
   position: absolute;
-  background-color: var(--clr-menu-text-hover);
+  background-color: var(
+    --clr-menu-text-hover
+  ); /* Sets the background color of the menu item underline */
   height: 3px;
   width: 0;
   left: 0;
   bottom: -3px;
-  transition: 0.3s ease;
+  transition: 0.3s ease; /* Adds a smooth transition effect */
 }
 
 #menu-items li a:hover::after {
-  width: 100%;
+  width: 100%; /* Expands the menu item underline on hover */
 }
 
 /* Footer Styles */
-
 footer {
   font-family: "Caprasimo", cursive;
   font-size: 1.2rem;
-  z-index: 100;
-  background: var(--clr-header-footer-bg);
-  color: var(--clr-header-footer-text);
+  z-index: 100; /* Sets the z-index of the footer */
+  background: var(
+    --clr-header-footer-bg
+  ); /* Sets the background color of the footer */
+  color: var(--clr-header-footer-text); /* Sets the text color of the footer */
 }
 
 #footer-container {
@@ -93,12 +101,12 @@ footer {
 }
 
 .footer-row {
-  display: flex;
-  flex-wrap: nowrap;
+  display: flex; /* Displays the footer row as a flex container */
+  flex-wrap: nowrap; /* Prevents wrapping of items within the footer row */
 }
 
 .footer-column {
-  flex: 1 1 25%;
+  flex: 1 1 25%; /* Sets the flex basis of the footer columns */
 }
 
 .footer-column h1 {
@@ -118,7 +126,9 @@ footer {
   bottom: -10px;
   height: 2px;
   width: 50%;
-  background-color: var(--clr-menu-text-hover);
+  background-color: var(
+    --clr-menu-text-hover
+  ); /* Sets the color of the horizontal line below the h1 */
 }
 
 .footer-column ul li {

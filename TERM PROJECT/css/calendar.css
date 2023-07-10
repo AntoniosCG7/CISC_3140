@@ -1,76 +1,94 @@
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
 
+/* Root variable declarations */
 :root {
-  --clr-bg: #fff;
-  --clr-header-footer-bg: #222121;
-  --clr-header-footer-text: #ffffffe0;
-  --clr-title-text: #fff;
-  --clr-menu-text: #fff;
-  --clr-menu-text-hover: #5ccbd0;
-  --clr-footer-items: #ffffff9f;
-  --clr-home-video-text: #fdfdfdef;
-  --clr-newsletter-bg: #eff1f2;
+  --clr-bg: #fff; /* Background color */
+  --clr-header-footer-bg: #222121; /* Header and footer background color */
+  --clr-header-footer-text: #ffffffe0; /* Header and footer text color */
+  --clr-title-text: #fff; /* Title text color */
+  --clr-menu-text: #fff; /* Menu text color */
+  --clr-menu-text-hover: #5ccbd0; /* Hover color for menu text */
+  --clr-footer-items: #ffffff9f; /* Footer item color */
+  --clr-home-video-text: #fdfdfdef; /* Text color for home video section */
+  --clr-newsletter-bg: #eff1f2; /* Background color for newsletter section */
 }
 
+/* Styles for calendar */
 #calendar {
-  background-color: var(--clr-newsletter-bg);
-  font-size: 0.9em;
-  font-family: "Oswald", sans-serif;
-  width: 100%;
+  background-color: var(
+    --clr-newsletter-bg
+  ); /* Sets the background color of the calendar */
+  font-size: 0.9em; /* Sets the font size of the calendar */
+  font-family: "Oswald", sans-serif; /* Sets the font family of the calendar */
+  width: 100%; /* Sets the width of the calendar */
   box-shadow: rgb(47, 47, 47) 0px 0px 1px, rgb(47, 47, 47) 0px 0px 5px,
-    rgb(47, 47, 47) 0px 0px 10px, rgb(47, 47, 47) 0px 0px 20px;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 2rem;
-  border: 3px solid #ccc;
-  border-radius: 0.5rem;
+    rgb(47, 47, 47) 0px 0px 10px, rgb(47, 47, 47) 0px 0px 20px; /* Adds a box shadow to the calendar */
+  max-width: 80rem; /* Sets the maximum width of the calendar */
+  margin: 0 auto; /* Centers the calendar horizontally */
+  padding: 2rem; /* Adds padding to the calendar */
+  border: 3px solid #ccc; /* Adds a solid border to the calendar */
+  border-radius: 0.5rem; /* Adds a border radius to the calendar */
 }
 
+/* Styles for table headers */
 th.weekday {
-  font-size: 1.3rem;
+  font-size: 1.3rem; /* Sets the font size of the weekday headers */
 }
 
+/* Styles for caption */
 caption {
-  font-size: 2em;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-align: center;
-  padding-bottom: 2rem;
+  font-size: 2em; /* Sets the font size of the caption */
+  font-weight: 600; /* Sets the font weight of the caption */
+  letter-spacing: 0.1em; /* Sets the letter spacing of the caption */
+  text-align: center; /* Centers the caption text */
+  padding-bottom: 2rem; /* Adds padding at the bottom of the caption */
 }
 
+/* Styles for table cells */
 td,
 th.weekday,
 #calendarTable .day {
-  border: 3px solid #ccc;
+  border: 3px solid #ccc; /* Adds a solid border to table cells */
 }
 
+/* Styles for individual days */
 #calendarTable .day {
-  height: 8rem;
-  width: 15rem; /* divide the row space evenly among the seven days */
-  text-align: center;
-  overflow: hidden;
-  position: relative;
+  height: 8rem; /* Sets the height of each day in the calendar */
+  width: 15rem; /* Sets the width of each day in the calendar */
+  text-align: center; /* Centers the text within each day */
+  overflow: hidden; /* Hides any overflow content within each day */
+  position: relative; /* Sets the position of each day */
 }
 
+/* Styles for day numbers */
 #calendarTable .day-number {
-  position: absolute;
-  top: 0.2rem;
-  left: 0.2rem;
+  position: absolute; /* Positions the day number absolutely within each day */
+  top: 0.2rem; /* Sets the top position of the day number */
+  left: 0.2rem; /* Sets the left position of the day number */
 }
 
+/* Styles for event descriptions */
 #calendarTable .event-description {
-  font-size: 1.1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  font-size: 1.1rem; /* Sets the font size of the event descriptions */
+  position: absolute; /* Positions the event descriptions absolutely within each day */
+  top: 50%; /* Sets the top position of the event descriptions */
+  left: 50%; /* Sets the left position of the event descriptions */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centers the event descriptions within each day */
+  text-align: center; /* Centers the text within the event descriptions */
 }
 
+/* Styles for today's date */
 #calendarTable .today {
-  background-color: #ff0;
+  background-color: #ff0; /* Sets the background color of today's date */
 }
 
+/* Styles for event dates */
 #calendarTable .event {
-  background-color: var(--clr-menu-text-hover);
+  background-color: var(
+    --clr-menu-text-hover
+  ); /* Sets the background color of event dates */
 }

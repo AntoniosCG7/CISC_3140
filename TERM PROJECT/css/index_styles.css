@@ -1,6 +1,8 @@
+/* Importing Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
 
+/* Color Variables */
 :root {
   --clr-bg: #fff;
   --clr-header-footer-bg: #222121;
@@ -15,6 +17,7 @@
 
 /* Video Styles */
 
+/* Home Video Container */
 #home-video-container {
   height: 80vh;
   width: 100%;
@@ -22,6 +25,7 @@
   margin-bottom: -10rem;
 }
 
+/* Home Video */
 #home-video {
   height: 88%;
   width: 100%;
@@ -29,6 +33,7 @@
   filter: brightness(65%);
 }
 
+/* Home Video Text */
 #home-video-text {
   position: absolute;
   top: 50%;
@@ -54,6 +59,7 @@
   margin-bottom: 2.8rem;
 }
 
+/* Explore Button */
 #explore-button {
   font-family: "Philosopher", sans-serif;
   font-size: 1.6rem;
@@ -72,6 +78,7 @@
 
 /* Quick-Info Styles */
 
+/* Quick Information Container */
 #quick-information-about-me {
   width: 80rem;
   display: flex;
@@ -80,6 +87,7 @@
   margin-top: 1rem;
 }
 
+/* Quick Information Heading and Animated Number */
 #quick-information-about-me h2,
 span.animated-number {
   font-family: "Caprasimo", sans-serif;
@@ -93,14 +101,16 @@ span.animated-number {
   justify-content: center;
 }
 
+/* Quick Information Paragraph */
 #quick-information-about-me p {
   font-family: "Oswald", cursive;
   font-size: 1.5rem;
   font-weight: lighter;
 }
 
-/* welcome-about Styles */
+/* Welcome-About Styles */
 
+/* Welcome-About Container */
 #welcome-about {
   background-color: #eff1f2;
   border-top: 3px solid var(--clr-header-footer-bg);
@@ -109,6 +119,7 @@ span.animated-number {
   margin-bottom: 4rem;
 }
 
+/* Welcome-About Content Container */
 #welcome-about-container {
   display: flex;
   flex-wrap: wrap;
@@ -119,24 +130,28 @@ span.animated-number {
   margin-bottom: 4rem;
 }
 
+/* Welcome-About Content */
 #welcome-about-content {
   flex: 1;
   max-width: 50%;
   margin-right: 0.5rem;
 }
 
+/* Welcome-About Content Heading */
 #welcome-about-content h2 {
   font-family: "Caprasimo", cursive;
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 
+/* Welcome-About Content Paragraph */
 #welcome-about-content p {
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
   margin-right: 13rem;
 }
 
+/* About Images */
 #about-image1,
 #about-image2 {
   width: 425px;
@@ -145,15 +160,18 @@ span.animated-number {
   border-radius: 1rem;
 }
 
+/* Related Links Container */
 #related-links {
   flex: 0 0 50%;
 }
 
+/* About Image 2 */
 #about-image2 {
   position: relative;
   left: 14.5rem;
 }
 
+/* Related Links Heading */
 #related-links h2 {
   font-family: "Caprasimo", cursive;
   font-size: 1.8rem;
@@ -162,6 +180,7 @@ span.animated-number {
   left: 15rem;
 }
 
+/* Related Links List */
 #related-links ul li {
   font-family: "Oswald", sans-serif;
   font-weight: lighter;
@@ -171,10 +190,12 @@ span.animated-number {
   left: 15rem;
 }
 
+/* Last Related Link Item */
 #related-links ul li:last-of-type {
   margin-bottom: 2rem;
 }
 
+/* Related Link Text */
 #related-links ul li a {
   color: #000000;
   transition: all 0.2s ease;
@@ -185,19 +206,22 @@ span.animated-number {
   padding-left: 10px;
 }
 
-/* Popular blog posts */
+/* Popular Blog Posts */
 
+/* Popular Blog Posts Section */
 #popular-blog-posts {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
+/* Popular Blog Posts Heading */
 #popular-blog-posts h2 {
   font-size: 1.8rem;
   margin-top: 2rem;
   text-align: center;
 }
 
+/* Popular Blog Posts Container */
 #popular-blog-posts-container {
   margin: 0 auto;
   display: flex;
@@ -206,6 +230,7 @@ span.animated-number {
   max-width: 80rem;
 }
 
+/* Media Queries */
 @media (max-width: 1900px) and (min-height: 600px) {
   #about-image1,
   #about-image2 {
