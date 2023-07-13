@@ -1,3 +1,20 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap");
+
+/* Root variable declarations */
+:root {
+  --clr-bg: #fff; /* Background color */
+  --clr-header-footer-bg: #222121; /* Header and footer background color */
+  --clr-header-footer-text: #ffffffe0; /* Header and footer text color */
+  --clr-title-text: #fff; /* Title text color */
+  --clr-menu-text: #fff; /* Menu text color */
+  --clr-menu-text-hover: #5ccbd0; /* Hover color for menu text */
+  --clr-footer-items: #ffffff9f; /* Footer item color */
+  --clr-home-video-text: #fdfdfdef; /* Text color for home video section */
+  --clr-newsletter-bg: #eff1f2; /* Background color for newsletter section */
+}
+
 /* Styles for the main container */
 #main-container {
   padding-top: 3rem; /* Adds 3 units of padding to the top */
